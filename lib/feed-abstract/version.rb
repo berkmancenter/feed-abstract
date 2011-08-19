@@ -1,5 +1,5 @@
 module Feed
-  module Abstract
+  class Abstract
     VERSION = "0.0.1"
   end
 end
