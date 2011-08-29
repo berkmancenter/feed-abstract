@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/tpl/atom.xsl" version="1.0"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Katana Photo Groups: (Latest Updates)</title>
+ <subtitle>This is the place to go for the latest photo updates on Katana Photo Groups</subtitle>
+ <link rel="alternate" href="http://www.katanapg.com/latest"/>
+ <link rel="self" href="http://www.katanapg.com/xml/latest/atom.xml"/>
+ <updated>2011-08-25T03:59:40+00:00</updated>
+ <author>
+   <name>Nick Pappas</name>
+ </author>
+ <logo>/images/rss.gif</logo>
+ <icon>/favicon.ico</icon>
+ <category term="photos"/>
+ <id>urn:uuid:www.katanapg.com-latest-xml</id>
+ <entry>
+   <title>08/25 3AM - Second year college move in 8-22-11 [By: Peggy Pappas]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2739"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/62/1134022551906b98/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2739</id>
+   <updated>2011-08-25T03:59:40+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/62/1134022551906b98/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/15 2AM - Bahamas Last Day 8-14-11 [By: Peggy Pappas]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2738"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/62/113302385239ffdc/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2738</id>
+   <updated>2011-08-15T02:42:03+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/62/113302385239ffdc/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/15 1AM - Bahamas Weekend August 2011 [By: Peggy Pappas]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2737"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/62/1132230828e677f6/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2737</id>
+   <updated>2011-08-15T01:51:38+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/62/1132230828e677f6/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/09 9PM - Dogs latest [By: Parker Benda]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2736"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/112/11322155299b3fc2/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2736</id>
+   <updated>2011-08-09T21:56:18+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/112/11322155299b3fc2/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/08 6PM - Aneta Misc [By: Parker Benda]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2735"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/112/1132181801edc7e7/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2735</id>
+   <updated>2011-08-08T18:18:01+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/112/1132181801edc7e7/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/08 6PM - Aneta nose [By: Parker Benda]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2734"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/112/11321815208c485a/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2734</id>
+   <updated>2011-08-08T18:15:20+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/112/11321815208c485a/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/08 3PM - M3 Areas [By: Parker Benda]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2733"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/112/113215590180d6f8/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2733</id>
+   <updated>2011-08-08T15:59:01+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/112/113215590180d6f8/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/05 2AM - Admin [By: Kurt Von Schleicher]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/1969"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/330/0705105839ead915/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-1969</id>
+   <updated>2011-08-05T02:40:37+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/330/0705105839ead915/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/04 2PM - Dogs [By: Parker Benda]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2732"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/112/11311428320aa295/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2732</id>
+   <updated>2011-08-04T14:28:32+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/112/11311428320aa295/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+ <entry>
+   <title>08/03 4PM - M3 FS [By: Parker Benda]</title>
+   <link rel="alternate" href="http://www.katanapg.com/group/2731"/>
+   <link rel="enclosure" href="http://misuzu.katanapg.com/112/11311629282d5a46/thumb.jpg" length="1000"/>
+   <id>urn:uuid:www.katanapg.com-group-2731</id>
+   <updated>2011-08-03T16:29:28+00:00</updated>
+   <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+       &lt;img src=&quot;http://misuzu.katanapg.com/112/11311629282d5a46/thumb.jpg&quot;/&gt;
+     </div>
+   </content>
+ </entry>
+</feed>
