@@ -18,7 +18,6 @@ module Feed
 
       def negotiate_channel_class
         if @raw_feed.class == RSS::Atom::Feed
-          puts 'It is atom'
           self.channel = AtomChannel.new(@raw_feed)
         elsif @raw_feed.class == RSS::RDF
           #rdf
