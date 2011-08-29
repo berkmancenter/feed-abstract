@@ -1,6 +1,6 @@
 class Feed
   class Abstract
-    class RDF
+    class RSSFeed
       attr_reader :feed
       attr_writer :feed
 

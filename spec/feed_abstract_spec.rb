@@ -1,5 +1,5 @@
 require 'spec_helper'
-module Feed::Abstract
+class Feed::Abstract
 
   describe Feed do
 
@@ -14,12 +14,12 @@ module Feed::Abstract
 
     it "should recognize rdf feeds properly" do
       feed = Feed.new(File.read('spec/test_data/djcp.rss'))
-      feed.channel.class.should == RDF
+      feed.channel.class.should == RSSFeed
     end
 
   end
 
-  describe RDF do
+  describe RSS do
     before(:all) do
       @djcp = Feed.new(File.read('spec/test_data/djcp.rss'))
     end

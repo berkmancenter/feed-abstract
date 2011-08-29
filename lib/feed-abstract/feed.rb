@@ -1,8 +1,8 @@
-module Feed
+class Feed
   class ParserError < Exception
   end
 
-  module Abstract
+  class Abstract
     class Feed
       attr_reader :channel, :raw_feed
       attr_writer :channel, :raw_feed
@@ -24,6 +24,7 @@ module Feed
           #rdf
         else
           #RSS::Rss
+          self.channel = RSSFeed.new(@raw_feed)
         end
       end
 

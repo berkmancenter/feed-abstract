@@ -1,5 +1,5 @@
-module Feed
-  module Abstract
+class Feed
+  class Abstract
     class Atom
       attr_reader :feed
       attr_writer :feed
