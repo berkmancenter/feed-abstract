@@ -9,22 +9,25 @@ class Feed
       end
 
       def title
-        @feed.title.content
+        @feed.channel.title
       end
 
       def description
-        @feed.subtitle.content
+        @feed.channel.description
       end
       alias :subtitle :description
 
       def generator
-        return '' if @feed.generator.nil?
-        @feed.generator.content
+        return '' if @feed.channel.generator.nil?
+        if @feed.channel.generator.match(/wordpress\.org/)
+          return 'WordPress'
+        end
+        @feed.channel.generator
       end
 
       def link
-        return '' if @feed.link.nil?
-        @feed.link.href
+        return '' if @feed.channel.link.nil?
+        @feed.channel.link
       end
 
       def rights
@@ -43,13 +46,13 @@ class Feed
       end
 
       def authors
-        return [] if @feed.authors.empty?
-        @feed.authors.collect{|au| au.name.content}
+        return [] if @feed.channel.managingEditor.empty?
+        [@feed.channel.managingEditor]
       end
 
       def author
-        return '' if @feed.authors.empty?
-        @feed.authors.collect{|au| au.name.content}.join(', ')
+        return '' if @feed.channel.managingEditor.empty?
+        @feed.channel.managingEditor
       end
 
       def categories
