@@ -19,12 +19,15 @@ class Feed
       def negotiate_channel_class
         if @raw_feed.class == RSS::Atom::Feed
           self.channel = Channel::Atom.new(@raw_feed)
+          self.items = Items::Atom.new(@raw_feed)
         elsif @raw_feed.class == RSS::RDF
           self.channel = Channel::RDF.new(@raw_feed)
+          self.channel = Items::RDF.new(@raw_feed)
           #rdf
         else
           #RSS::Rss
           self.channel = Channel::RSSFeed.new(@raw_feed)
+          self.items = Items::RSS.new(@raw_feed)
         end
       end
 

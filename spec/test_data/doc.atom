@@ -25,6 +25,14 @@
 			<name>Doc Searls</name>
 						<uri>http://blogs.law.harvard.edu/vrm/</uri>
 					</author>
+		<contributor>
+			<name>Doc Searls</name>
+						<uri>http://blogs.law.harvard.edu/vrm/</uri>
+					</contributor>
+		<contributor>
+			<name>The Beatles</name>
+						<uri>http://blogs.law.harvard.edu/vrm/</uri>
+					</contributor>
 		<title type="html"><![CDATA[Many years of now]]></title>
 		<link rel="alternate" type="text/html" href="http://blogs.law.harvard.edu/doc/2011/07/29/many-years-of-now/" />
 		<id>http://blogs.law.harvard.edu/doc/?p=4195</id>
