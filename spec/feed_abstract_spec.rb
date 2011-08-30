@@ -9,12 +9,12 @@ class Feed::Abstract
 
     it "should recognize atom feeds properly" do
       feed = Feed.new(File.read('spec/test_data/doc.atom'))
-      feed.channel.class.should == Atom
+      feed.channel.class.should == Channel::Atom
     end
 
     it "should recognize rss feeds properly" do
       feed = Feed.new(File.read('spec/test_data/djcp.rss'))
-      feed.channel.class.should == RSSFeed
+      feed.channel.class.should == Channel::RSSFeed
     end
 
   end
@@ -74,34 +74,45 @@ class Feed::Abstract
     it "should have the correct categories" do
       @docatom.channel.categories.should == []
       @kpgatom.channel.categories.should == ['photos']
+      @djcprss2.channel.categories.should == ['Tech','Open Source']
+      
 
       @docatom.channel.category.should == ''
       @kpgatom.channel.category.should == 'photos'
+      @djcprss2.channel.category.should == 'Tech, Open Source'
     end
 
     it "should have the correct icon" do
       @docatom.channel.icon.should == ''
       @kpgatom.channel.icon.should == '/favicon.ico'
+
+      @djcprss2.channel.icon.should == '/foobar.gif'
     end
 
     it "should have the correct logo" do
       @docatom.channel.logo.should == ''
       @kpgatom.channel.logo.should == '/images/rss.gif'
+
+      @djcprss2.channel.logo.should == '/foobar.gif'
     end
 
     it "should have the correct rights" do
       @docatom.channel.rights.should == ''
       @kpgatom.channel.rights.should == ''
+      @djcprss2.channel.rights.should == '2011 DJCP'
     end
 
     it "should have the correct updated value" do
       @docatom.channel.updated.should == Time.parse('2011-07-29 12:33:29 UTC')
       @kpgatom.channel.updated.should == Time.parse('2011-08-24 23:59:40 -0400')
+      @djcprss2.channel.updated.should == Time.parse('Tue, 02 Aug 2011 01:05:26 +0000')
     end
 
     it "should have the correct guid" do
       @docatom.channel.guid.should == 'http://blogs.law.harvard.edu/doc/feed/atom/'
       @kpgatom.channel.guid.should == 'urn:uuid:www.katanapg.com-latest-xml'
+
+      @djcprss2.channel.guid.should == 'http://blogs.law.harvard.edu/djcp'
     end
   end
 end
