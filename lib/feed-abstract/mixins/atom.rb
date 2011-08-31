@@ -1,5 +1,9 @@
 # encoding: UTF-8
 module FeedAbstractMixins
+
+  module RSS
+  end
+
   module Atom
 
     def title

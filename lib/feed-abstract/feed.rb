@@ -22,7 +22,7 @@ class Feed
           self.items = Items::Atom.new(@raw_feed)
         elsif @raw_feed.class == RSS::RDF
           self.channel = Channel::RDF.new(@raw_feed)
-          self.channel = Items::RDF.new(@raw_feed)
+          self.items = Items::RDF.new(@raw_feed)
           #rdf
         else
           #RSS::Rss
