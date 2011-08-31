@@ -6,6 +6,7 @@ class Feed::Abstract
       @docatom = Feed.new(File.read('spec/test_data/doc.atom'))
       @kpgatom = Feed.new(File.read('spec/test_data/katanapg.atom'))
       @djcprss2 = Feed.new(File.read('spec/test_data/djcp.rss'))
+      @oa = Feed.new(File.read('spec/test_data/oa.africa.rss'))
     end
 
     [:title, :subtitle, :description, :link, :generator, :authors, :author, :categories,  :category, :icon, :logo, :rights, :updated, :guid].each do|att|
@@ -17,6 +18,7 @@ class Feed::Abstract
       @docatom.channel.title.should == 'Doc Searls Weblog'
       @kpgatom.channel.title.should == 'Katana Photo Groups: (Latest Updates)'
       @djcprss2.channel.title.should == 'Dan Collis-Puro'
+      @oa.channel.title.should == 'Connotea: petersuber\'s bookmarks matching tag oa.africa'
     end
 
     it "should have the correct subtitle and description" do
@@ -28,28 +30,37 @@ class Feed::Abstract
 
       @djcprss2.channel.subtitle.should == 'Tech. Open Source. Stuff that doesn\'t suck.'
       @djcprss2.channel.description.should == 'Tech. Open Source. Stuff that doesn\'t suck.'
+
+      @oa.channel.description.should == 'Connotea: petersuber\'s bookmarks matching tag oa.africa'
+      @oa.channel.subtitle.should == 'Connotea: petersuber\'s bookmarks matching tag oa.africa'
+
     end
 
     it "should have the correct link" do
       @docatom.channel.link.should == 'http://blogs.law.harvard.edu/doc'
       @kpgatom.channel.link.should == 'http://www.katanapg.com/latest'
       @djcprss2.channel.link.should == 'http://blogs.law.harvard.edu/djcp'
+
+      @oa.channel.link.should == 'http://www.connotea.org/user/petersuber/tag/oa.africa'
     end
 
     it "should have the correct generator" do
       @docatom.channel.generator.should == 'WordPress'
       @kpgatom.channel.generator.should == ''
       @djcprss2.channel.generator.should == 'WordPress'
+      @oa.channel.generator.should == 'Connotea'
     end
 
     it "should have the correct authors" do
       @docatom.channel.authors.should == ['Doc Searls']
       @kpgatom.channel.authors.should == ['Nick Pappas']
       @djcprss2.channel.authors.should == ['DJCP']
+      @oa.channel.authors.should == []
 
       @docatom.channel.author.should == 'Doc Searls'
       @kpgatom.channel.author.should == 'Nick Pappas'
       @djcprss2.channel.author.should == 'DJCP'
+      @oa.channel.author.should == ''
 
     end
 

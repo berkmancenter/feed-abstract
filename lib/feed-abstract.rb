@@ -7,8 +7,8 @@ require 'rss'
 require 'feed-abstract/mixins/atom'
 
 require 'feed-abstract/channel/atom'
-require 'feed-abstract/channel/rdffeed'
 require 'feed-abstract/channel/rssfeed'
+require 'feed-abstract/channel/rdffeed'
 
 require 'feed-abstract/items/rss'
 require 'feed-abstract/items/atom'
