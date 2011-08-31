@@ -1,4 +1,5 @@
 # encoding: UTF-8
+
 class Feed
   class Abstract
     class Channel

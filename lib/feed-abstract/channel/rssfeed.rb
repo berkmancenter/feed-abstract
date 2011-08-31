@@ -1,12 +1,14 @@
+# encoding: UTF-8
+
 class Feed
   class Abstract
     class Channel
       class RSSFeed
-        attr_reader :feed
-        attr_writer :feed
+        include FeedAbstractMixins::RSS
+        attr_reader :feed, :source
 
         def initialize(feed)
-          @feed = feed
+          @feed = @source = feed
         end
 
         def title

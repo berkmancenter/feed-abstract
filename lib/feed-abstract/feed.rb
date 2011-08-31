@@ -24,7 +24,6 @@ class Feed
           self.channel = Channel::RDF.new(@raw_feed)
           self.items = Items::RDF.new(@raw_feed)
         else
-          #RSS::Rss
           self.channel = Channel::RSSFeed.new(@raw_feed)
           self.items = Items::RSS.new(@raw_feed)
         end
