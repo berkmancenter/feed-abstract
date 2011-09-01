@@ -30,6 +30,8 @@
   <rdf:li rdf:resource="http://www.connotea.org/user/petersuber/uri/a06a5dacf749971113b88e73c8dc6d65" />
  </rdf:Seq>
 </items>
+<dc:subject>oa.africa</dc:subject>
+<dc:subject>oa.test</dc:subject>
 </channel>
 <item rdf:about="http://www.connotea.org/user/petersuber/uri/924b97cee02e01888a93473ca6752213">
 <title>Mali doctoral students learn about access to e-resources | EIFL</title>

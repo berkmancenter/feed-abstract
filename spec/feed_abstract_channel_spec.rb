@@ -67,12 +67,13 @@ class Feed::Abstract
     it "should have the correct categories" do
       @docatom.channel.categories.should == []
       @kpgatom.channel.categories.should == ['photos']
-      @djcprss2.channel.categories.should == ['Tech','Open Source']
+      @djcprss2.channel.categories.should == ['Tech','Open Source','oa.africa','oa.test']
+      @oa.channel.categories.should == ['oa.africa','oa.test']
       
-
       @docatom.channel.category.should == ''
       @kpgatom.channel.category.should == 'photos'
       @djcprss2.channel.category.should == 'Tech, Open Source'
+      @oa.channel.category.should == ''
     end
 
     it "should have the correct icon" do
@@ -80,6 +81,7 @@ class Feed::Abstract
       @kpgatom.channel.icon.should == '/favicon.ico'
 
       @djcprss2.channel.icon.should == '/foobar.gif'
+      @oa.channel.icon.should == ''
     end
 
     it "should have the correct logo" do

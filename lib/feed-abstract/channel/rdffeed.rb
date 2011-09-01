@@ -22,6 +22,16 @@ class Feed
           ''
         end
 
+        def categories
+          return [] if @feed.channel.dc_subjects.empty?
+          @feed.channel.dc_subjects.collect{|c| c.content}
+        end
+
+        def category
+          return '' if self.categories.empty?
+          self.categories.join(', ')
+        end
+
       end
     end
   end

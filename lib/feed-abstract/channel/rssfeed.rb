@@ -34,8 +34,8 @@ class Feed
         end
 
         def rights
-          return '' if @feed.channel.copyright.nil?
-          @feed.channel.copyright
+          return '' if @feed.channel.copyright.nil? && @feed.channel.dc_rights.nil?
+          [@feed.channel.copyright,@feed.channel.dc_rights].compact.join(' ')
         end
 
         def updated
@@ -49,8 +49,8 @@ class Feed
         end
 
         def authors
-          return [] if @feed.channel.managingEditor.empty?
-          [@feed.channel.managingEditor]
+          return [] if @feed.channel.managingEditor.empty? && @feed.channel.dc_publishers.empty?
+          [@feed.channel.managingEditor, @feed.channel.dc_publishers].flatten.uniq
         end
 
         def author
@@ -59,8 +59,8 @@ class Feed
         end
 
         def categories
-          return [] if @feed.channel.categories.empty?
-          @feed.channel.categories.collect{|c| c.content}
+          return [] if @feed.channel.categories.empty? && @feed.channel.dc_subjects.empty?
+          [@feed.channel.categories, @feed.channel.dc_subjects].flatten.uniq.collect{|c| c.content}
         end
 
         def category
