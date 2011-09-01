@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-class Feed
+module Feed
   class Abstract
     class Item
       class RSS
@@ -32,11 +32,11 @@ class Feed
         end
 
         def author
-          (@item.author.nil?) ? '' : @item.author
+          (self.authors.empty?) ? '' : self.authors.join(', ')
         end
 
         def authors
-          [self.author]
+          [@item.author, @item.dc_creators.collect{|c| c.content}].flatten.uniq.compact
         end
 
         def contributors

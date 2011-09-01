@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-class Feed
+module Feed
   class Abstract
     class Item
       class Atom

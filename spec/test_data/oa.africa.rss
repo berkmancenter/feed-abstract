@@ -32,7 +32,19 @@
 </items>
 <dc:subject>oa.africa</dc:subject>
 <dc:subject>oa.test</dc:subject>
+<dc:rights>Connotea 2011</dc:rights>
+<dc:date>2011-09-01T08:07:21Z</dc:date>
+
+<image rdf:resource="http://example.com/image.gif" />
 </channel>
+
+<image rdf:about="http://example.com/image.gif">
+    <title>Example image</title>
+    <link>http://www.example.com/</link>
+    <url>http://www.example.com/deeplink</url>
+  </image>
+
+
 <item rdf:about="http://www.connotea.org/user/petersuber/uri/924b97cee02e01888a93473ca6752213">
 <title>Mali doctoral students learn about access to e-resources | EIFL</title>
 <link>http://www.eifl.net/news/mali-doctoral-students-learn-about-access-e-r</link>

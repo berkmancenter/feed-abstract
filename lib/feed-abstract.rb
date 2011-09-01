@@ -4,6 +4,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__)) unless $LOAD_PATH.include?(File.dirna
 
 require 'rss'
 
+require "feed-abstract/version"
 require 'feed-abstract/mixins/atom'
 
 require 'feed-abstract/channel/atom'
@@ -20,3 +21,13 @@ require 'feed-abstract/item/rdf'
 
 require 'feed-abstract/feed'
 
+
+#RSS::Rss::Channel::Item.class_eval{
+#  def foobar
+#    'asdfasdf'
+#  end
+#}
+
+#RSS::Rss::Channel::Item.instance_eval{
+#  install_get_attribute('category', '', false )
+#}

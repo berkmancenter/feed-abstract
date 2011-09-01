@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-class Feed
+module Feed
   class Abstract
     class Channel
       class RSSFeed
@@ -21,10 +21,12 @@ class Feed
         alias :subtitle :description
 
         def generator
-          return '' if @feed.channel.generator.nil?
-          if @feed.channel.generator.match(/wordpress\.org/i)
+          if ! @feed.channel.generator.nil? && @feed.channel.generator.match(/wordpress\.org/i)
             return 'WordPress'
+          elsif @feed.channel.link.match(/www\.delicious\.com/i)
+            return 'Delicious'
           end
+          return '' if @feed.channel.generator.nil?
           @feed.channel.generator
         end
 
@@ -49,13 +51,13 @@ class Feed
         end
 
         def authors
-          return [] if @feed.channel.managingEditor.empty? && @feed.channel.dc_publishers.empty?
+          return [] if @feed.channel.managingEditor.nil? && @feed.channel.dc_publishers.empty?
           [@feed.channel.managingEditor, @feed.channel.dc_publishers].flatten.uniq
         end
 
         def author
-          return '' if @feed.channel.managingEditor.empty?
-          @feed.channel.managingEditor
+          return '' if self.authors.empty?
+          self.authors.join(', ')
         end
 
         def categories

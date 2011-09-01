@@ -14,6 +14,8 @@
       <comments>http://www.delicious.com/url/6e0504ca698232809a0b5065e8b83031</comments>
       <wfw:commentRss>http://feeds.delicious.com/v2/rss/url/6e0504ca698232809a0b5065e8b83031</wfw:commentRss>
       <source url="http://feeds.delicious.com/v2/rss/djcp">djcp's bookmarks</source>
+      <category domain="http://www.delicious.com/djcp/">cooking</category>
+      <category domain="http://www.delicious.com/djcp/">oddness</category>
     </item>
     <item>
       <title>Solarized - Ethan Schoonover</title>

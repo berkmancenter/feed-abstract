@@ -1,4 +1,6 @@
-class Feed
+# encoding: UTF-8
+
+module Feed
   class Abstract
     class Channel
       class RDF < RSSFeed
@@ -30,6 +32,22 @@ class Feed
         def category
           return '' if self.categories.empty?
           self.categories.join(', ')
+        end
+
+        def icon
+          return '' if @feed.channel.image.nil?
+          @feed.channel.image.resource
+        end
+        alias :logo :icon 
+
+        def rights
+          return '' if @feed.channel.dc_rights.nil?
+          @feed.channel.dc_rights
+        end
+
+        def updated
+          return '' if @feed.channel.dc_date.nil?
+          @feed.channel.dc_date
         end
 
       end

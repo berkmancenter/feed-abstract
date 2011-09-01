@@ -1,4 +1,6 @@
-class Feed
+# encoding: UTF-8
+
+module Feed
   class ParserError < Exception
   end
 

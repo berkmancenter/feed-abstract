@@ -1,3 +1,5 @@
+# encoding: UTF-8
+#
 require 'spec_helper'
 class Feed::Abstract
 
@@ -7,6 +9,7 @@ class Feed::Abstract
       @kpgatom = Feed.new(File.read('spec/test_data/katanapg.atom'))
       @djcprss2 = Feed.new(File.read('spec/test_data/djcp.rss'))
       @oa = Feed.new(File.read('spec/test_data/oa.africa.rss'))
+      @delicious = Feed.new(File.read('spec/test_data/djcp_delicious.rss'))
     end
 
     [:title, :subtitle, :description, :link, :generator, :authors, :author, :categories,  :category, :icon, :logo, :rights, :updated, :guid].each do|att|
@@ -19,6 +22,7 @@ class Feed::Abstract
       @kpgatom.channel.title.should == 'Katana Photo Groups: (Latest Updates)'
       @djcprss2.channel.title.should == 'Dan Collis-Puro'
       @oa.channel.title.should == 'Connotea: petersuber\'s bookmarks matching tag oa.africa'
+      @delicious.channel.title.should == 'Delicious/djcp'
     end
 
     it "should have the correct subtitle and description" do
@@ -34,6 +38,8 @@ class Feed::Abstract
       @oa.channel.description.should == 'Connotea: petersuber\'s bookmarks matching tag oa.africa'
       @oa.channel.subtitle.should == 'Connotea: petersuber\'s bookmarks matching tag oa.africa'
 
+      @delicious.channel.description.should == 'bookmarks posted by djcp'
+      @delicious.channel.subtitle.should == 'bookmarks posted by djcp'
     end
 
     it "should have the correct link" do
@@ -42,6 +48,7 @@ class Feed::Abstract
       @djcprss2.channel.link.should == 'http://blogs.law.harvard.edu/djcp'
 
       @oa.channel.link.should == 'http://www.connotea.org/user/petersuber/tag/oa.africa'
+      @delicious.channel.link.should == 'http://www.delicious.com/djcp'
     end
 
     it "should have the correct generator" do
@@ -49,6 +56,7 @@ class Feed::Abstract
       @kpgatom.channel.generator.should == ''
       @djcprss2.channel.generator.should == 'WordPress'
       @oa.channel.generator.should == 'Connotea'
+      @delicious.channel.generator.should == 'Delicious'
     end
 
     it "should have the correct authors" do
@@ -56,11 +64,13 @@ class Feed::Abstract
       @kpgatom.channel.authors.should == ['Nick Pappas']
       @djcprss2.channel.authors.should == ['DJCP']
       @oa.channel.authors.should == []
+      @delicious.channel.authors.should == []
 
       @docatom.channel.author.should == 'Doc Searls'
       @kpgatom.channel.author.should == 'Nick Pappas'
       @djcprss2.channel.author.should == 'DJCP'
       @oa.channel.author.should == ''
+      @delicious.channel.author.should == ''
 
     end
 
@@ -69,38 +79,45 @@ class Feed::Abstract
       @kpgatom.channel.categories.should == ['photos']
       @djcprss2.channel.categories.should == ['Tech','Open Source','oa.africa','oa.test']
       @oa.channel.categories.should == ['oa.africa','oa.test']
+      @delicious.channel.categories.should == []
       
       @docatom.channel.category.should == ''
       @kpgatom.channel.category.should == 'photos'
       @djcprss2.channel.category.should == 'Tech, Open Source'
-      @oa.channel.category.should == ''
+      @oa.channel.category.should == 'oa.africa, oa.test'
+      @delicious.channel.category.should == ''
     end
 
     it "should have the correct icon" do
       @docatom.channel.icon.should == ''
       @kpgatom.channel.icon.should == '/favicon.ico'
-
       @djcprss2.channel.icon.should == '/foobar.gif'
-      @oa.channel.icon.should == ''
+      @oa.channel.icon.should == 'http://example.com/image.gif'
+      @delicious.channel.icon.should == ''
     end
 
     it "should have the correct logo" do
       @docatom.channel.logo.should == ''
       @kpgatom.channel.logo.should == '/images/rss.gif'
-
       @djcprss2.channel.logo.should == '/foobar.gif'
+      @oa.channel.logo.should == 'http://example.com/image.gif'
+      @delicious.channel.logo.should == ''
     end
 
     it "should have the correct rights" do
       @docatom.channel.rights.should == ''
       @kpgatom.channel.rights.should == ''
       @djcprss2.channel.rights.should == '2011 DJCP'
+      @oa.channel.rights.should == 'Connotea 2011'
+      @delicious.channel.rights.should == ''
     end
 
     it "should have the correct updated value" do
       @docatom.channel.updated.should == Time.parse('2011-07-29 12:33:29 UTC')
       @kpgatom.channel.updated.should == Time.parse('2011-08-24 23:59:40 -0400')
       @djcprss2.channel.updated.should == Time.parse('Tue, 02 Aug 2011 01:05:26 +0000')
+      @oa.channel.updated.should == Time.parse('2011-09-01T08:07:21Z')
+      @delicious.channel.updated.should == ''
     end
 
     it "should have the correct guid" do
@@ -108,6 +125,8 @@ class Feed::Abstract
       @kpgatom.channel.guid.should == 'urn:uuid:www.katanapg.com-latest-xml'
 
       @djcprss2.channel.guid.should == 'http://blogs.law.harvard.edu/djcp'
+      @oa.channel.guid.should == 'http://www.connotea.org/user/petersuber/tag/oa.africa'
+      @delicious.channel.guid.should == 'http://www.delicious.com/djcp'
     end
   end
 end

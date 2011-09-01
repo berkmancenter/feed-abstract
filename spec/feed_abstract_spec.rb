@@ -15,6 +15,12 @@ class Feed::Abstract
     it "should recognize rss feeds properly" do
       feed = Feed.new(File.read('spec/test_data/djcp.rss'))
       feed.channel.class.should == Channel::RSSFeed
+      feed = Feed.new(File.read('spec/test_data/djcp_delicious.rss'))
+    end
+
+    it "should recognize rdf feeds properly" do
+      feed = Feed.new(File.read('spec/test_data/oa.africa.rss'))
+      feed.channel.class.should == Channel::RDF
     end
 
   end
