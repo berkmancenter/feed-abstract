@@ -6,12 +6,18 @@ Feed::Abstract creates a common object graph for RSS, Atom, and RDF feeds using 
 
  gem install feed-abstract
 
-
 == Usage 
-  
-  xml = File.open('/home/djcp/rssfeed.rss')
 
-  feed = Feed::Abstract::Feed.new(xml)
+See Feed::Abstract::Feed for basic examples. Also see the Feed::Abstract::Channel and Feed::Abstract::Item namespaces.
 
-  puts feed.channel.title
+== Author
+
+Dan Collis Puro, Berkman Center for Internet & Society
+djcp@cyber.law.harvard.edu
+
+== License & Copyright
+
+GPLv3
+
+2011 President and Fellows of Harvard College
 
