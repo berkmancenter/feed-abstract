@@ -40,7 +40,6 @@ module FeedAbstract
         @item.about
       end
 
-
     end
   end
 end

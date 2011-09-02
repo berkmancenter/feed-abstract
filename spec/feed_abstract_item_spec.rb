@@ -19,13 +19,25 @@ module FeedAbstract
 
       @delicious = Feed.new(File.read('spec/test_data/djcp_delicious.rss'))
       @deliciousitem = @delicious.items.first
+      
+      @zotero = Feed.new(File.read('spec/test_data/zotero.rss'))
+      @zoteroitem = @zotero.items.first
     end
 
     [:title, :summary, :content, :link, :authors, :author, :contributor, :contributors, :categories, :category, :rights, :updated, :guid, :published].each do|att|
       it { @docatomitem.should respond_to att}
+      it { @kpgatomitem.should respond_to att}
       it { @djcprss2item.should respond_to att}
       it { @oaitem.should respond_to att}
       it { @deliciousitem.should respond_to att}
+      it { @zoteroitem.should respond_to att}
+
+      it { @docatomitem.send(att).should_not == false}
+      it { @kpgatomitem.send(att).should_not == false}
+      it { @djcprss2item.send(att).should_not == false}
+      it { @oaitem.send(att).should_not == false}
+      it { @deliciousitem.send(att).should_not == false}
+      it { @zoteroitem.send(att).should_not == false}
     end
 
     it "should have the correct title" do 
@@ -34,6 +46,7 @@ module FeedAbstract
       @djcprss2item.title.should == 'S1:E7 – Justice'
       @oaitem.title.should == 'Mali doctoral students learn about access to e-resources | EIFL'
       @deliciousitem.title.should == 'aspic and other delights'
+      @zoteroitem.title.should == 'An experimental application of the Delphi method to the use of experts'
     end
 
     it "should have the correct summary" do 
@@ -44,6 +57,7 @@ module FeedAbstract
 
      @oaitem.summary.should == %q|""On August 13, 2011, Consortium Malien des Bibliothèques (COMBI)  organized a workshop on access and use of e-resources (both commercial and open access)....There was a special focus on resources made freely available through EIFL for Malian institutions and also on the various international initiatives working to improve access to scientific information in Mali. Digital libraries and portals for open access journals were also demonstrated...."" Posted by petersuber to oa.notes ru.no oa.event oa.africa oa.new on Thu Aug 18 2011|
       @deliciousitem.summary.should == ''
+      @zoteroitem.summary.should == ''
     end
 
     it "should have the correct content" do 
@@ -65,6 +79,34 @@ module FeedAbstract
       @oaitem.content.should == %q|<link rel="stylesheet" href="http://www.connotea.org/global.css" type="text/css" title="styled"/><span class="internet"><div class="icons">&nbsp;</div></span><a rel="nofollow" href="http://www.eifl.net/news/mali-doctoral-students-learn-about-access-e-r" onclick="this.href='http'+'://www.connotea.org/click?src=http%3A%2F%2Fwww.connotea.org%2Frss%2Ftag%2Foa.new%3Fnum%3D1000&amp;dest=http%3A%2F%2Fwww.eifl.net%2Fnews%2Fmali-doctoral-students-learn-about-access-e-r'; return true;" title="Mali doctoral students learn about access to e-resources \| EIFL" class="rssitem">Mali doctoral students learn about access to e-resources \| EIFL</a><div class="actualurl">www.eifl.net</div><div class="description">&quot;On August 13, 2011, Consortium Malien des Biblioth&egrave;ques (COMBI)  organized a workshop on access and use of e-resources (both commercial and open access)....There was a special focus on resources made freely available through EIFL for Malian institutions and also on the various international initiatives working to improve access to scientific information in Mali. Digital libraries and portals for open access journals were also demonstrated....&quot;</div><div class="posted"><span class="postedby">Posted by <a rel="nofollow" href="http://www.connotea.org/user/petersuber" title="petersuber" class="postedby">petersuber</a></span> <span class="postedtags">to <a rel="nofollow" href="http://www.connotea.org/tag/oa.notes" title="oa.notes" class="postedtag">oa.notes</a> <a rel="nofollow" href="http://www.connotea.org/tag/ru.no" title="ru.no" class="postedtag">ru.no</a> <a rel="nofollow" href="http://www.connotea.org/tag/oa.event" title="oa.event" class="postedtag">oa.event</a> <a rel="nofollow" href="http://www.connotea.org/tag/oa.africa" title="oa.africa" class="postedtag">oa.africa</a> <a rel="nofollow" href="http://www.connotea.org/tag/oa.new" title="oa.new" class="postedtag">oa.new</a></span> <span class="postedtime">on <a rel="nofollow" href="http://www.connotea.org/date/2011-08-18" title="Thu Aug 18 2011">Thu Aug 18 2011</a> at 21:14 UTC</span> \| <a href="http://www.connotea.org/article/924b97cee02e01888a93473ca6752213">info</a> \| <a title="Results powered by Proximic" onclick="return false;" id="proximic_proxit:aid=npg&channel_expand=MEDIA&query_url=http://www.eifl.net/news/mali-doctoral-students-learn-about-access-e-r">related</a></div>|
 
       @deliciousitem.content.should == ''
+      @zoteroitem.content.should == %q|<div xmlns="http://www.w3.org/1999/xhtml" xmlns:zapi="http://zotero.org/ns/api">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>N Dalkey</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>O Helmer</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>458-467</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>Management science (JSTOR)</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>1963</td>
+          </tr>
+        </table>
+      </div>|
     end
 
     it "should have the correct link" do
@@ -73,6 +115,7 @@ module FeedAbstract
       @djcprss2item.link.should == 'http://blogs.law.harvard.edu/djcp/2011/08/s1e7-justice/'
       @oaitem.link.should == 'http://www.eifl.net/news/mali-doctoral-students-learn-about-access-e-r'
       @deliciousitem.link.should == 'http://aspicandotherdelights.tumblr.com/'
+      @zoteroitem.link.should == 'https://api.zotero.org/groups/52650/items/FHDJ5PXZ'
     end
 
     it "should have the correct author" do
@@ -81,6 +124,7 @@ module FeedAbstract
       @djcprss2item.author.should == 'djcp'
       @oaitem.author.should == 'petersuber'
       @deliciousitem.author.should == 'djcp'
+      @zoteroitem.author.should == 'ingle.atul'
     end
     
     it "should have the correct authors" do
@@ -89,6 +133,7 @@ module FeedAbstract
       @djcprss2item.authors.should == ['djcp']
       @oaitem.authors.should == ['petersuber']
       @deliciousitem.authors.should == ['djcp']
+      @zoteroitem.authors.should == ['ingle.atul']
     end
 
     it "should have the correct contributor" do
@@ -97,6 +142,7 @@ module FeedAbstract
       @djcprss2item.contributor.should == ''
       @oaitem.contributor.should == ''
       @deliciousitem.contributor.should == ''
+      @zoteroitem.contributor.should == ''
     end
     
     it "should have the correct contributors" do
@@ -105,6 +151,7 @@ module FeedAbstract
       @djcprss2item.contributors.should == []
       @oaitem.contributors.should == []
       @deliciousitem.contributors.should == []
+      @zoteroitem.contributors.should == []
     end
 
     it "should have the correct category" do
@@ -113,6 +160,7 @@ module FeedAbstract
       @djcprss2item.category.should == 'Uncategorized, tngwatchestng'
       @oaitem.category.should == 'oa.notes, ru.no, oa.event, oa.africa, oa.new'
       @deliciousitem.category.should == 'cooking, oddness'
+      @zoteroitem.category.should == ''
     end
 
     it "should have the correct categories" do
@@ -121,6 +169,7 @@ module FeedAbstract
       @djcprss2item.categories.should == ['Uncategorized', 'tngwatchestng']
       @oaitem.categories.should == ["oa.notes", "ru.no", "oa.event", "oa.africa", "oa.new"]
       @deliciousitem.categories.should == ['cooking', 'oddness']
+      @zoteroitem.categories.should == []
     end
 
     it "should have the correct rights" do
@@ -129,6 +178,7 @@ module FeedAbstract
       @djcprss2item.rights.should == ''
       @oaitem.rights.should == ''
       @deliciousitem.rights.should == ''
+      @zoteroitem.rights.should == ''
     end
 
     it "should have been updated at the correct time" do
@@ -137,14 +187,7 @@ module FeedAbstract
       @djcprss2item.updated.should == Time.parse('Tue, 02 Aug 2011 01:05:26 +0000')
       @oaitem.updated.should == Time.parse('2011-08-18T21:14:38Z')
       @deliciousitem.updated.should == Time.parse('Fri, 19 Aug 2011 00:56:26 +0000')
-    end
-
-    it "should have the proper guid" do
-      @docatomitem.guid.should == "http://blogs.law.harvard.edu/doc/?p=4195"
-      @kpgatomitem.guid.should == 'urn:uuid:www.katanapg.com-group-2739'
-      @djcprss2item.guid.should == 'http://blogs.law.harvard.edu/djcp/?p=227'
-      @oaitem.guid.should == 'http://www.connotea.org/user/petersuber/uri/924b97cee02e01888a93473ca6752213'
-      @deliciousitem.guid.should == 'http://www.delicious.com/url/6e0504ca698232809a0b5065e8b83031#djcp'
+      @zoteroitem.updated.should == Time.parse('2011-09-02T17:16:11Z')
     end
 
     it "should have been published at the proper time" do
@@ -153,6 +196,16 @@ module FeedAbstract
       @djcprss2item.published.should == Time.parse('Tue, 02 Aug 2011 01:05:26 +0000')
       @oaitem.published.should == Time.parse('2011-08-18T21:14:38Z')
       @deliciousitem.published.should == Time.parse('Fri, 19 Aug 2011 00:56:26 +0000')
+      @zoteroitem.published.should == Time.parse('2011-09-02T17:14:22Z')
+    end
+
+    it "should have the proper guid" do
+      @docatomitem.guid.should == "http://blogs.law.harvard.edu/doc/?p=4195"
+      @kpgatomitem.guid.should == 'urn:uuid:www.katanapg.com-group-2739'
+      @djcprss2item.guid.should == 'http://blogs.law.harvard.edu/djcp/?p=227'
+      @oaitem.guid.should == 'http://www.connotea.org/user/petersuber/uri/924b97cee02e01888a93473ca6752213'
+      @deliciousitem.guid.should == 'http://www.delicious.com/url/6e0504ca698232809a0b5065e8b83031#djcp'
+      @zoteroitem.guid.should == 'http://zotero.org/groups/pros_paper/items/FHDJ5PXZ'
     end
 
   end

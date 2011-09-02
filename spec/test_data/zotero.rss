@@ -1,0 +1,697 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:zapi="http://zotero.org/ns/api">
+  <title>Zotero / PROS Paper Group / Items</title>
+  <id>http://zotero.org/groups/52650/items</id>
+  <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items"/>
+  <link rel="first" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items"/>
+  <link rel="last" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items"/>
+  <link rel="alternate" type="text/html" href="http://zotero.org/groups/52650/items"/>
+  <zapi:totalResults>15</zapi:totalResults>
+  <zapi:apiVersion>1</zapi:apiVersion>
+  <updated>2011-09-02T17:16:11Z</updated>
+  <entry>
+    <title>An experimental application of the Delphi method to the use of experts</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/FHDJ5PXZ</id>
+    <published>2011-09-02T17:14:22Z</published>
+    <updated>2011-09-02T17:16:11Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/FHDJ5PXZ"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/FHDJ5PXZ"/>
+    <zapi:key>FHDJ5PXZ</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Dalkey and Helmer</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>N Dalkey</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>O Helmer</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>458-467</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>Management science (JSTOR)</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>1963</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>A First Course in Probability</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/8432WKUZ</id>
+    <published>2011-09-02T17:06:54Z</published>
+    <updated>2011-09-02T17:07:55Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/8432WKUZ"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/8432WKUZ"/>
+    <zapi:key>8432WKUZ</zapi:key>
+    <zapi:itemType>book</zapi:itemType>
+    <zapi:creatorSummary>Ross</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Book</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>S M Ross</td>
+          </tr>
+          <tr class="edition">
+            <th style="text-align: right">Edition</th>
+            <td>7</td>
+          </tr>
+          <tr class="place">
+            <th style="text-align: right">Place</th>
+            <td>Englewood Cliffs, NJ</td>
+          </tr>
+          <tr class="publisher">
+            <th style="text-align: right">Publisher</th>
+            <td>Prentice Hall</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2005</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>NHSN Manual: Biovigilance Component Protocol Hemovigilance Module</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/KI2TT8DI</id>
+    <published>2011-09-02T17:03:50Z</published>
+    <updated>2011-09-02T17:05:03Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/KI2TT8DI"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/KI2TT8DI"/>
+    <zapi:key>KI2TT8DI</zapi:key>
+    <zapi:itemType>document</zapi:itemType>
+    <zapi:creatorSummary>Division of Healthcare Quality Promotion</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Document</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Division of Healthcare Quality Promotion</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://www.cdc.gov/nhsn/PDFs/hemovigModuleProtocol_current.pdf</td>
+          </tr>
+          <tr class="publisher">
+            <th style="text-align: right">Publisher</th>
+            <td>Centers for Disease Control and Prevention</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>July 2010</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>RFID in the Blood Supply Chain</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/5CZEF6CH</id>
+    <published>2011-09-02T17:01:25Z</published>
+    <updated>2011-09-02T17:03:03Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/5CZEF6CH"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/5CZEF6CH"/>
+    <zapi:key>5CZEF6CH</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Briggs et al.</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>L Briggs</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>A Gutierrez</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>M Kopetsky</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>K Young</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>R Veeramani</td>
+          </tr>
+          <tr class="volume">
+            <th style="text-align: right">Volume</th>
+            <td>Fall 2009</td>
+          </tr>
+          <tr class="issue">
+            <th style="text-align: right">Issue</th>
+            <td>23 (4)</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>54-63</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>Journal of Healthcare Information Management</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>National Transfusion Transmitted Injury Surveillance System [database on the Internet]</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/BP2PF5VK</id>
+    <published>2011-09-02T17:00:43Z</published>
+    <updated>2011-09-02T17:01:14Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/BP2PF5VK"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/BP2PF5VK"/>
+    <zapi:key>BP2PF5VK</zapi:key>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>Public Health Agency of Canada</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Public Health Agency of Canada</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://www.phac-aspc.gc.ca/hcai-iamss/tti-it/tti_report-eng.php</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2009-01-16</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Serious Hazards of Transfusion [database on the Internet]</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/APA7FVT2</id>
+    <published>2011-09-02T16:59:55Z</published>
+    <updated>2011-09-02T17:00:31Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/APA7FVT2"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/APA7FVT2"/>
+    <zapi:key>APA7FVT2</zapi:key>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary/>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://www.shotuk.org/</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2009-01-16</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Biological Product and HCT-P Deviation Reports [database on the Internet]</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/R7HD82TX</id>
+    <published>2011-09-02T16:58:18Z</published>
+    <updated>2011-09-02T16:59:30Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/R7HD82TX"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/R7HD82TX"/>
+    <zapi:key>R7HD82TX</zapi:key>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>FDA-Centers for Biological Evaluation and Research</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>FDA-Centers for Biological Evaluation and Research</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://www.fda.gov/BiologicsBloodVaccines/SafetyAvailability/ReportaProblem/BiologicalProductDeviations/ucm129757.htm</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2008-08-05</td>
+          </tr>
+          <tr class="websiteTitle">
+            <th style="text-align: right">Website Title</th>
+            <td>U.S. Food and Drug Administration [homepage on the Internet]</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>The 2007 Nation Wide Blood Service and Utilization Survey Report. American Association of Blood Banks</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/DJ28V8SC</id>
+    <published>2011-09-02T16:57:29Z</published>
+    <updated>2011-09-02T16:58:07Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/DJ28V8SC"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/DJ28V8SC"/>
+    <zapi:key>DJ28V8SC</zapi:key>
+    <zapi:itemType>document</zapi:itemType>
+    <zapi:creatorSummary>Whitaker and Sullivan</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Document</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>B L Whitaker</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>M Sullivan</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://www.aabb.org/Content/Programs_and_Services/Data_Center/NBCUS/nbcus.htm</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Adoption of health information technology for medication safety in U.S. hospitals, 2006</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/BK2828KB</id>
+    <published>2011-09-02T16:53:29Z</published>
+    <updated>2011-09-02T16:55:50Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/BK2828KB"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/BK2828KB"/>
+    <zapi:key>BK2828KB</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Furukawa et al.</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>M F Furukawa</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>T S Raghu</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>T J Spaulding</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>A Vinze</td>
+          </tr>
+          <tr class="issue">
+            <th style="text-align: right">Issue</th>
+            <td>27 (3)</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>865-875</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>Health Aff.</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2008</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>FDA Rule Requires Bar Codes on Drugs and Blood to Help Reduce Errors: Improving Patient and Consumer Safety</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/Z862NPX5</id>
+    <published>2011-09-02T16:51:12Z</published>
+    <updated>2011-09-02T16:52:48Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/Z862NPX5"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/Z862NPX5"/>
+    <zapi:key>Z862NPX5</zapi:key>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>US-FDA</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>US-FDA</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>www.fda.gov/oc/initiatives/barcode-sadr/</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2008</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2008-11-05</td>
+          </tr>
+          <tr class="websiteTitle">
+            <th style="text-align: right">Website Title</th>
+            <td>U.S. Food and Drug Administration [homepage on the Internet]</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Patient Safety with Blood Products Administration Using Wireless and Bar-Code Technology</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/F5HCCT8G</id>
+    <published>2011-09-02T16:48:16Z</published>
+    <updated>2011-09-02T16:50:13Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/F5HCCT8G"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/F5HCCT8G"/>
+    <zapi:key>F5HCCT8G</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Porcella and Walker</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>A Porcella</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>K Walker</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1560432/?report=abstract</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>614&#x2013;618</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>AMIA Annu Symp Proc. 2005</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2005</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Les incidents et accidents transfusionnels signal&#xE9;s au syst&#xE8;me d&#x2019;h&#xE9;movigilance du Qu&#xE9;bec en 2004</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/UTKNVE7R</id>
+    <published>2011-09-02T16:47:26Z</published>
+    <updated>2011-09-02T16:48:07Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/UTKNVE7R"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/UTKNVE7R"/>
+    <zapi:key>UTKNVE7R</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Robiliard and Nawej</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>P Robiliard</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>K Nawej</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://publications.msss.gouv.qc.ca/acrobat/f/documentation/2009/09-212-05.pdf</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2007</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Les incidents et accidents transfusionnels signal&#xE9;s au syst&#xE8;me d&#x2019;h&#xE9;movigilance du Qu&#xE9;bec en 2004</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/5WXT7TM5</id>
+    <published>2011-09-02T16:47:15Z</published>
+    <updated>2011-09-02T16:47:22Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/5WXT7TM5"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/5WXT7TM5"/>
+    <zapi:key>5WXT7TM5</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Robiliard and Nawej</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>P Robiliard</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>K Nawej</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://msssa4.msss.gouv.qc.ca/santpub/sang.nsf/f531ae8ac61d85e485256869005adcba/50561a37902dcbbf85256eb4006fc7c9?OpenDocument</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2006</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Les incidents et accidents transfusionnels signal&#xE9;s au syst&#xE8;me d&#x2019;h&#xE9;movigilance du Qu&#xE9;bec en 2004</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/29PE528Q</id>
+    <published>2011-09-02T16:47:06Z</published>
+    <updated>2011-09-02T16:47:13Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/29PE528Q"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/29PE528Q"/>
+    <zapi:key>29PE528Q</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Robiliard and Nawej</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>P Robiliard</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>K Nawej</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://msssa4.msss.gouv.qc.ca/santpub/sang.nsf/f531ae8ac61d85e485256869005adcba/50561a37902dcbbf85256eb4006fc7c9?OpenDocument</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2005</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Les incidents et accidents transfusionnels signal&#xE9;s au syst&#xE8;me d&#x2019;h&#xE9;movigilance du Qu&#xE9;bec en 2004</title>
+    <author>
+      <name>ingle.atul</name>
+      <uri>http://zotero.org/ingle.atul</uri>
+    </author>
+    <id>http://zotero.org/groups/pros_paper/items/374F4TK2</id>
+    <published>2011-09-02T16:45:40Z</published>
+    <updated>2011-09-02T16:46:57Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/52650/items/374F4TK2"/>
+    <link rel="alternate" type="text/html" href="http://zotero.org/groups/pros_paper/items/374F4TK2"/>
+    <zapi:key>374F4TK2</zapi:key>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Robiliard and Nawej</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <zapi:numTags>0</zapi:numTags>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>P Robiliard</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>K Nawej</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://msssa4.msss.gouv.qc.ca/santpub/sang.nsf/f531ae8ac61d85e485256869005adcba/50561a37902dcbbf85256eb4006fc7c9?OpenDocument</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2004</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+</feed>

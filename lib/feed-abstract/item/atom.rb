@@ -2,7 +2,7 @@
 
 module FeedAbstract
 
-  # You don't want this class. You want FeedAbstract::Item::Atom, FeedAbstract::Item::RSS or  FeedAbstract::Item::RDF.
+  # You don't want this class. You want FeedAbstract::Item::Atom, FeedAbstract::Item::RSS or FeedAbstract::Item::RDF.
   class Item
 
     # See FeedAbstractMixins::Atom for more instance methods.
@@ -26,10 +26,10 @@ module FeedAbstract
         @item.contributors.collect{|c| c.name.content}
       end
 
-      #The contributor list as a strong joined with a comma.
+      #The contributor list as a string joined with a comma.
       def contributor
-        return '' if @item.contributors.empty?
-        @item.contributors.collect{|c| c.name.content}.join(', ')
+        return '' if self.contributors.empty?
+        self.contributors.join(', ')
       end
 
       def summary

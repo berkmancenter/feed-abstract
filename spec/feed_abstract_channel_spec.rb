@@ -10,11 +10,23 @@ module FeedAbstract
       @djcprss2 = Feed.new(File.read('spec/test_data/djcp.rss'))
       @oa = Feed.new(File.read('spec/test_data/oa.africa.rss'))
       @delicious = Feed.new(File.read('spec/test_data/djcp_delicious.rss'))
+      @zotero = Feed.new(File.read('spec/test_data/zotero.rss'))
     end
 
     [:title, :subtitle, :description, :link, :generator, :authors, :author, :categories,  :category, :icon, :logo, :rights, :updated, :guid].each do|att|
       it { @docatom.channel.should respond_to att}
+      it { @kpgatom.channel.should respond_to att}
       it { @djcprss2.channel.should respond_to att}
+      it { @oa.channel.should respond_to att}
+      it { @delicious.channel.should respond_to att}
+      it { @zotero.channel.should respond_to att}
+
+      it { @docatom.channel.send(att).should_not == false}
+      it { @kpgatom.channel.send(att).should_not == false}
+      it { @djcprss2.channel.send(att).should_not == false}
+      it { @oa.channel.send(att).should_not == false}
+      it { @delicious.channel.send(att).should_not == false}
+      it { @zotero.channel.send(att).should_not == false}
     end
 
     it "should have the correct title" do
@@ -23,6 +35,7 @@ module FeedAbstract
       @djcprss2.channel.title.should == 'Dan Collis-Puro'
       @oa.channel.title.should == 'Connotea: petersuber\'s bookmarks matching tag oa.africa'
       @delicious.channel.title.should == 'Delicious/djcp'
+      @zotero.channel.title.should == 'Zotero / PROS Paper Group / Items'
     end
 
     it "should have the correct subtitle and description" do
@@ -40,6 +53,9 @@ module FeedAbstract
 
       @delicious.channel.description.should == 'bookmarks posted by djcp'
       @delicious.channel.subtitle.should == 'bookmarks posted by djcp'
+
+      @zotero.channel.subtitle.should == ''
+      @zotero.channel.description.should == ''
     end
 
     it "should have the correct link" do
@@ -49,6 +65,8 @@ module FeedAbstract
 
       @oa.channel.link.should == 'http://www.connotea.org/user/petersuber/tag/oa.africa'
       @delicious.channel.link.should == 'http://www.delicious.com/djcp'
+
+      @zotero.channel.link.should == 'https://api.zotero.org/groups/52650/items'
     end
 
     it "should have the correct generator" do
@@ -57,6 +75,7 @@ module FeedAbstract
       @djcprss2.channel.generator.should == 'WordPress'
       @oa.channel.generator.should == 'Connotea'
       @delicious.channel.generator.should == 'Delicious'
+      @zotero.channel.generator.should == 'Zotero'
     end
 
     it "should have the correct authors" do
@@ -65,12 +84,14 @@ module FeedAbstract
       @djcprss2.channel.authors.should == ['DJCP']
       @oa.channel.authors.should == []
       @delicious.channel.authors.should == []
+      @zotero.channel.authors.should == []
 
       @docatom.channel.author.should == 'Doc Searls'
       @kpgatom.channel.author.should == 'Nick Pappas'
       @djcprss2.channel.author.should == 'DJCP'
       @oa.channel.author.should == ''
       @delicious.channel.author.should == ''
+      @zotero.channel.author.should == ''
 
     end
 
@@ -80,12 +101,14 @@ module FeedAbstract
       @djcprss2.channel.categories.should == ['Tech','Open Source','oa.africa','oa.test']
       @oa.channel.categories.should == ['oa.africa','oa.test']
       @delicious.channel.categories.should == []
+      @zotero.channel.categories.should == []
       
       @docatom.channel.category.should == ''
       @kpgatom.channel.category.should == 'photos'
       @djcprss2.channel.category.should == 'Tech, Open Source'
       @oa.channel.category.should == 'oa.africa, oa.test'
       @delicious.channel.category.should == ''
+      @zotero.channel.category.should == ''
     end
 
     it "should have the correct icon" do
@@ -94,6 +117,7 @@ module FeedAbstract
       @djcprss2.channel.icon.should == '/foobar.gif'
       @oa.channel.icon.should == 'http://example.com/image.gif'
       @delicious.channel.icon.should == ''
+      @zotero.channel.icon.should == ''
     end
 
     it "should have the correct logo" do
@@ -102,6 +126,7 @@ module FeedAbstract
       @djcprss2.channel.logo.should == '/foobar.gif'
       @oa.channel.logo.should == 'http://example.com/image.gif'
       @delicious.channel.logo.should == ''
+      @zotero.channel.logo.should == ''
     end
 
     it "should have the correct rights" do
@@ -110,6 +135,7 @@ module FeedAbstract
       @djcprss2.channel.rights.should == '2011 DJCP'
       @oa.channel.rights.should == 'Connotea 2011'
       @delicious.channel.rights.should == ''
+      @zotero.channel.rights.should == ''
     end
 
     it "should have the correct updated value" do
@@ -118,6 +144,7 @@ module FeedAbstract
       @djcprss2.channel.updated.should == Time.parse('Tue, 02 Aug 2011 01:05:26 +0000')
       @oa.channel.updated.should == Time.parse('2011-09-01T08:07:21Z')
       @delicious.channel.updated.should == ''
+      @zotero.channel.updated.should == Time.parse('2011-09-02T17:16:11Z')
     end
 
     it "should have the correct guid" do
@@ -127,6 +154,7 @@ module FeedAbstract
       @djcprss2.channel.guid.should == 'http://blogs.law.harvard.edu/djcp'
       @oa.channel.guid.should == 'http://www.connotea.org/user/petersuber/tag/oa.africa'
       @delicious.channel.guid.should == 'http://www.delicious.com/djcp'
+      @zotero.channel.guid.should == 'http://zotero.org/groups/52650/items'
     end
   end
 end

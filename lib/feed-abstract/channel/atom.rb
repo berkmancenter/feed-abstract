@@ -16,12 +16,16 @@ module FeedAbstract
       end
 
       def description
+        return '' if @feed.subtitle.nil?
         @feed.subtitle.content
       end
       alias :subtitle :description
 
       # A string representing the application that created this feed.
       def generator
+        if self.link.match(/zotero\.org/)
+          return 'Zotero'
+        end
         return '' if @feed.generator.nil?
         @feed.generator.content
       end
