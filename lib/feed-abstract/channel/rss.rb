@@ -3,7 +3,7 @@
 module Feed
   class Abstract
     class Channel
-      class RSSFeed
+      class RSS
         include FeedAbstractMixins::RSS
         attr_reader :feed, :source
 

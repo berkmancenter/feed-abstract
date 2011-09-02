@@ -1,9 +1,11 @@
 # encoding: UTF-8
+
 module FeedAbstractMixins
 
   module RSS
   end
 
+  # Instance methods shared between Feed::Abstract::Channel::Atom and Feed::Abstract::Item::Atom
   module Atom
 
     def title

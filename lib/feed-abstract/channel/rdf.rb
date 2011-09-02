@@ -3,8 +3,7 @@
 module Feed
   class Abstract
     class Channel
-      class RDF < RSSFeed
-
+      class RDF < RSS
 
         def authors
           return [] if @feed.channel.dc_publishers.empty?

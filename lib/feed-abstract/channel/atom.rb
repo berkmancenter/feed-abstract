@@ -3,6 +3,8 @@
 module Feed
   class Abstract
     class Channel
+
+      # See FeedAbstractMixins::Atom for more instance methods.
       class Atom
         include FeedAbstractMixins::Atom
 

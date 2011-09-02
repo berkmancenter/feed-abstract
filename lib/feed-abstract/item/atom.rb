@@ -2,7 +2,11 @@
 
 module Feed
   class Abstract
+
+    # You don't want this class. You want Feed::Abstract::Item::Atom, Feed::Abstract::Item::RSS or  Feed::Abstract::Item::RDF.
     class Item
+
+      # See FeedAbstractMixins::Atom for more instance methods.
       class Atom
         include FeedAbstractMixins::Atom
         attr_reader :item, :source
