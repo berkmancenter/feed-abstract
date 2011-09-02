@@ -1,6 +1,6 @@
-= Feed::Abstract
+= FeedAbstract
 
-Feed::Abstract creates a common object graph for RSS, Atom, and RDF feeds using the classes returned by RSS::Parser 
+FeedAbstract creates a common object graph for RSS, Atom, and RDF feeds using the classes returned by RSS::Parser 
 
 == Installation
 
@@ -8,7 +8,7 @@ Feed::Abstract creates a common object graph for RSS, Atom, and RDF feeds using 
 
 == Usage 
 
-See Feed::Abstract::Feed for basic examples. Also see the Feed::Abstract::Channel and Feed::Abstract::Item namespaces.
+See FeedAbstract::Feed for basic examples. Also see the FeedAbstract::Channel and FeedAbstract::Item namespaces.
 
 == Author
 

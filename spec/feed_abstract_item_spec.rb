@@ -1,7 +1,7 @@
 # encoding: UTF-8
 
 require 'spec_helper'
-class Feed::Abstract
+module FeedAbstract
 
   describe Item do
     before(:all) do

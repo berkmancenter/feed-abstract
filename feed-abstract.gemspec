@@ -4,7 +4,7 @@ require "feed-abstract/version"
 
 Gem::Specification.new do |s|
   s.name        = "feed-abstract"
-  s.version     = Feed::Abstract::VERSION
+  s.version     = FeedAbstract::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Daniel Collis-Puro"]
   s.email       = ["djcp@cyber.law.harvard.edu"]
