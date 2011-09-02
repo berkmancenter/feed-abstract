@@ -2,6 +2,8 @@
 
 module Feed
   class Abstract
+
+    #Nothing interesting. The classes in this namespace map the RSS::Parser object entries/items to the proper Feed::Abstract::Item classes. Perhap item-level transformations could be supported through this class in the future.
     class Items
       class Atom < Array
         attr_reader :feed, :items
