@@ -10,8 +10,12 @@ module FeedAbstract
 
     # === Parameters
     # * xml - a string or object instance that responds to <b>read</b>
-    # * :do_validate - whether or not the feed should be validated. Passed through to RSS::Parser
-    # * :ignore_unknown_element - passed through to RSS::Parser
+    # * :do_validate - whether or not the feed should be validated. Passed through to RSS::Parser. Defaults to false.
+    # * :ignore_unknown_element - passed through to RSS::Parser. Defaults to true.
+    # * :input_encoding - Defaults to "UTF-8". This is the encoding of the feed as passed to FeedAbstract::Feed.new
+    # * :output_encoding - Defaults to "UTF-8". This is the encoding of the feed as it's passed to the underlying parser - generally you should keep this as "UTF-8".
+    # * :force_encoding - Force input text to be UTF-8 (or whatever you set :output_encoding to), removing invalid byte sequences before passing to RSS::Parser. Defaults to true because RSS::Parser will thrown an error if it sees invalid byte sequences.
+    # * :transliterate_characters - Ask Iconv to transliterate unknown characters when forcing encoding conversion. This only works reliably when you set the :input_encoding properly. Defaults to false and should probably be left there because it's quirky and doesn't appear to work reliably.
     #
     # === Returns
     # An object with three attributes:
@@ -42,8 +46,33 @@ module FeedAbstract
     #  f = FeedAbstract::Feed.new(Net::HTTP.get(URI.parse('http://rss.slashdot.org/Slashdot/slashdot')))
     #  puts f.items.collect{|i| i.link}
     #   
-    def initialize(xml = nil, options = {:do_validate => false, :ignore_unknown_element => true})
+    def initialize(xml = nil, opts = {})
+      options = {
+        :do_validate => false, 
+        :ignore_unknown_element => true, 
+        :input_encoding => 'UTF-8', 
+        :output_encoding => 'UTF-8', 
+        :force_encoding => true, 
+        :transliterate_characters => false
+      }.merge(opts)
+
       input = (xml.respond_to?(:read)) ? xml.read : xml
+
+      if options[:force_encoding]
+        ic = Iconv.new(options[:output_encoding].upcase + ((options[:transliterate_characters]) ? '//TRANSLIT' : '') + '//IGNORE',options[:input_encoding].upcase)
+        if input.respond_to?(:encoding)
+          # ruby 1.9
+          # Only transcode if the encoding isn't valid.
+          # See: http://po-ru.com/diary/fixing-invalid-utf-8-in-ruby-revisited/ for why we're appending the extra space.
+          unless (input.encoding.to_s.upcase == options[:output_encoding].upcase && input.valid_encoding?)
+            input = ic.iconv(input << ' ')[0..-2]
+          end
+        else
+          # ruby 1.8
+          input = ic.iconv(input << ' ')[0..-2]
+        end
+      end
+
       @raw_feed = RSS::Parser.parse(input,options[:do_validate], options[:ignore_unknown_element])
       if @raw_feed == nil
         raise FeedAbstract::ParserError

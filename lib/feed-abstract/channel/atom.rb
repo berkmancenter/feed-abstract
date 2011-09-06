@@ -15,6 +15,11 @@ module FeedAbstract
         @feed = @source = feed
       end
 
+      def language
+        return '' if @feed.lang.nil?
+        @feed.lang
+      end
+
       def description
         return '' if @feed.subtitle.nil?
         @feed.subtitle.content

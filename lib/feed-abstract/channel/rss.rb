@@ -14,6 +14,11 @@ module FeedAbstract
         @feed.channel.title
       end
 
+      def language
+        return '' if @feed.channel.language.nil?
+        @feed.channel.language
+      end
+
       def description
         @feed.channel.description
       end
@@ -43,8 +48,8 @@ module FeedAbstract
 
       # A Time object.
       def updated
-        return '' if @feed.channel.lastBuildDate.nil?
-        @feed.channel.lastBuildDate
+        return '' if @feed.channel.lastBuildDate.nil? && @feed.channel.pubDate.nil?
+        (@feed.channel.lastBuildDate.nil?) ? @feed.channel.pubDate : @feed.channel.lastBuildDate
       end
 
       # A globally unique ID for this feed. A URL in this case.

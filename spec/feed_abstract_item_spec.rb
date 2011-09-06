@@ -5,39 +5,21 @@ module FeedAbstract
 
   describe Item do
     before(:all) do
-      @docatom = Feed.new(File.read('spec/test_data/doc.atom'))
-      @docatomitem = @docatom.items.first
-
-      @kpgatom = Feed.new(File.read('spec/test_data/katanapg.atom'))
-      @kpgatomitem = @kpgatom.items.first
-
-      @djcprss2 = Feed.new(File.read('spec/test_data/djcp.rss'))
-      @djcprss2item = @djcprss2.items.first
-
-      @oa = Feed.new(File.read('spec/test_data/oa.africa.rss'))
-      @oaitem = @oa.items.first
-
-      @delicious = Feed.new(File.read('spec/test_data/djcp_delicious.rss'))
-      @deliciousitem = @delicious.items.first
-      
-      @zotero = Feed.new(File.read('spec/test_data/zotero.rss'))
-      @zoteroitem = @zotero.items.first
+      instantiate_feeds
+      instantiate_example_items
     end
 
-    [:title, :summary, :content, :link, :authors, :author, :contributor, :contributors, :categories, :category, :rights, :updated, :guid, :published].each do|att|
-      it { @docatomitem.should respond_to att}
-      it { @kpgatomitem.should respond_to att}
-      it { @djcprss2item.should respond_to att}
-      it { @oaitem.should respond_to att}
-      it { @deliciousitem.should respond_to att}
-      it { @zoteroitem.should respond_to att}
+    it{@docatom.should respond_to :items}
 
-      it { @docatomitem.send(att).should_not == false}
-      it { @kpgatomitem.send(att).should_not == false}
-      it { @djcprss2item.send(att).should_not == false}
-      it { @oaitem.send(att).should_not == false}
-      it { @deliciousitem.send(att).should_not == false}
-      it { @zoteroitem.send(att).should_not == false}
+    it "responds to all attributes without causing an error" do
+      @all_feeds.each do |feed|
+        [:title, :summary, :content, :link, :authors, :author, :contributor, :contributors, :categories, :category, :rights, :updated, :guid, :published].each do|att|
+          feed.items.each do|item|
+            item.should respond_to att 
+            item.send(att).should_not == false 
+          end
+        end
+      end
     end
 
     it "should have the correct title" do 
@@ -47,6 +29,7 @@ module FeedAbstract
       @oaitem.title.should == 'Mali doctoral students learn about access to e-resources | EIFL'
       @deliciousitem.title.should == 'aspic and other delights'
       @zoteroitem.title.should == 'An experimental application of the Delphi method to the use of experts'
+      @feedburneritem.title.should == 'Did Libya help CIA with renditions of terror suspects?'
     end
 
     it "should have the correct summary" do 
@@ -58,6 +41,9 @@ module FeedAbstract
      @oaitem.summary.should == %q|""On August 13, 2011, Consortium Malien des Bibliothèques (COMBI)  organized a workshop on access and use of e-resources (both commercial and open access)....There was a special focus on resources made freely available through EIFL for Malian institutions and also on the various international initiatives working to improve access to scientific information in Mali. Digital libraries and portals for open access journals were also demonstrated...."" Posted by petersuber to oa.notes ru.no oa.event oa.africa oa.new on Thu Aug 18 2011|
       @deliciousitem.summary.should == ''
       @zoteroitem.summary.should == ''
+      @feedburneritem.summary.should == %q|Documents seized at Libyan intelligence headquarters have unearthed insights into the CIA's surprisingly close relationship with counterparts in the Gadhafi regime.<div class="feedflare">
+<a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?i=sV5N-C76mOM:9JZ1FBt9fS4:V_sGLiPBpWU" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=qj6IDK7rITs" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?i=sV5N-C76mOM:9JZ1FBt9fS4:gIN9vFwOqvQ" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/rss/cnn_topstories/~4/sV5N-C76mOM" height="1" width="1"/>|
     end
 
     it "should have the correct content" do 
@@ -68,7 +54,6 @@ module FeedAbstract
 <p>A couple months back I <a href="http://www.youtube.com/watch?v=4dn1jkWgFvM&amp;feature=youtu.be">gave a talk</a> at the <a href="http://personaldemocracy.com/">Personal Democracy Forum</a> where I was warmly introduced as one of those elders we should all listen to. That was nice, but here&#8217;s the strange part: when it comes to what I do in the world, I&#8217;m still young. Most of the people I hang and work with are half my age or less, yet I rarely notice or think about that, because it&#8217;s irrelevant. My job is changing the world, and that&#8217;s an calling that tends to involve smart, young, energetic people. The difference with a few of us is that we&#8217;ve been young a lot longer.</p>
 <p>But I don&#8217;t have illusions about the facts of life. It&#8217;s in one&#8217;s sixties that the croak rate starts to angle north on the Y axis as age ticks east on the X. Still, I&#8217;m in no less hurry to make things happen than I ever was. I&#8217;m just more patient. That&#8217;s because one of the things I&#8217;ve learned is that now is always earlier than it seems. None of the future has happened yet, and it&#8217;s always bigger than the past.</p>
 |
-
       @kpgatomitem.content.should == %q|<div xmlns="http://www.w3.org/1999/xhtml">
        <img src="http://misuzu.katanapg.com/62/1134022551906b98/thumb.jpg"/>
      </div>|
@@ -107,6 +92,7 @@ module FeedAbstract
           </tr>
         </table>
       </div>|
+      @feedburneritem.content.should == ''
     end
 
     it "should have the correct link" do
@@ -116,6 +102,7 @@ module FeedAbstract
       @oaitem.link.should == 'http://www.eifl.net/news/mali-doctoral-students-learn-about-access-e-r'
       @deliciousitem.link.should == 'http://aspicandotherdelights.tumblr.com/'
       @zoteroitem.link.should == 'https://api.zotero.org/groups/52650/items/FHDJ5PXZ'
+      @feedburneritem.link.should == 'http://rss.cnn.com/~r/rss/cnn_topstories/~3/sV5N-C76mOM/index.html'
     end
 
     it "should have the correct author" do
@@ -125,6 +112,7 @@ module FeedAbstract
       @oaitem.author.should == 'petersuber'
       @deliciousitem.author.should == 'djcp'
       @zoteroitem.author.should == 'ingle.atul'
+      @feedburneritem.author.should == ''
     end
     
     it "should have the correct authors" do
@@ -134,6 +122,7 @@ module FeedAbstract
       @oaitem.authors.should == ['petersuber']
       @deliciousitem.authors.should == ['djcp']
       @zoteroitem.authors.should == ['ingle.atul']
+      @feedburneritem.authors.should == []
     end
 
     it "should have the correct contributor" do
@@ -143,6 +132,7 @@ module FeedAbstract
       @oaitem.contributor.should == ''
       @deliciousitem.contributor.should == ''
       @zoteroitem.contributor.should == ''
+      @feedburneritem.contributor.should == ''
     end
     
     it "should have the correct contributors" do
@@ -152,6 +142,7 @@ module FeedAbstract
       @oaitem.contributors.should == []
       @deliciousitem.contributors.should == []
       @zoteroitem.contributors.should == []
+      @feedburneritem.contributors.should == []
     end
 
     it "should have the correct category" do
@@ -161,6 +152,7 @@ module FeedAbstract
       @oaitem.category.should == 'oa.notes, ru.no, oa.event, oa.africa, oa.new'
       @deliciousitem.category.should == 'cooking, oddness'
       @zoteroitem.category.should == ''
+      @feedburneritem.category.should == ''
     end
 
     it "should have the correct categories" do
@@ -170,6 +162,7 @@ module FeedAbstract
       @oaitem.categories.should == ["oa.notes", "ru.no", "oa.event", "oa.africa", "oa.new"]
       @deliciousitem.categories.should == ['cooking', 'oddness']
       @zoteroitem.categories.should == []
+      @feedburneritem.categories.should == []
     end
 
     it "should have the correct rights" do
@@ -179,6 +172,7 @@ module FeedAbstract
       @oaitem.rights.should == ''
       @deliciousitem.rights.should == ''
       @zoteroitem.rights.should == ''
+      @feedburneritem.rights.should == ''
     end
 
     it "should have been updated at the correct time" do
@@ -188,6 +182,7 @@ module FeedAbstract
       @oaitem.updated.should == Time.parse('2011-08-18T21:14:38Z')
       @deliciousitem.updated.should == Time.parse('Fri, 19 Aug 2011 00:56:26 +0000')
       @zoteroitem.updated.should == Time.parse('2011-09-02T17:16:11Z')
+      @feedburneritem.updated.should == Time.parse('Sat, 03 Sep 2011 16:11:39 EDT')
     end
 
     it "should have been published at the proper time" do
@@ -197,6 +192,7 @@ module FeedAbstract
       @oaitem.published.should == Time.parse('2011-08-18T21:14:38Z')
       @deliciousitem.published.should == Time.parse('Fri, 19 Aug 2011 00:56:26 +0000')
       @zoteroitem.published.should == Time.parse('2011-09-02T17:14:22Z')
+      @feedburneritem.published.should == Time.parse('Sat, 03 Sep 2011 16:11:39 EDT')
     end
 
     it "should have the proper guid" do
@@ -206,6 +202,7 @@ module FeedAbstract
       @oaitem.guid.should == 'http://www.connotea.org/user/petersuber/uri/924b97cee02e01888a93473ca6752213'
       @deliciousitem.guid.should == 'http://www.delicious.com/url/6e0504ca698232809a0b5065e8b83031#djcp'
       @zoteroitem.guid.should == 'http://zotero.org/groups/pros_paper/items/FHDJ5PXZ'
+      @feedburneritem.guid.should == 'http://www.cnn.com/2011/WORLD/africa/09/03/libya.west.spies/index.html?eref=rss_topstories'
     end
 
   end

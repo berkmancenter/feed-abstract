@@ -4,6 +4,11 @@ module FeedAbstract
   class Channel
     class RDF < RSS
 
+      def language
+        return '' if @feed.channel.dc_language.nil?
+        @feed.channel.dc_language
+      end
+
       # The authors list as an array.
       def authors
         return [] if @feed.channel.dc_publishers.empty?
