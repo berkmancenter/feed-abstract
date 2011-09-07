@@ -25,7 +25,18 @@ module FeedAbstract
     # You will most likely be using the <b>channel</b> and <b>items</b> attributes.
     #
     # === Notes
-    # If a feed can't be parsed, we'll throw a FeedAbstract::ParserError.
+    # * If a feed can't be parsed, we'll throw a FeedAbstract::ParserError.
+    # * All dates are returned as Time objects. You will need to convert if you're using ActiveRecord as it expects DateTime objects - fortunately this is very easy via the 'to_datetime' extension that ActiveRecord provides.
+    #
+    #  feed = FeedAbstract::Feed.new(feed_xml_string)
+    #  feed.items.each do |item|
+    #    fi = FeedItem.new #Your feed item model.
+    #    if item.updated.respond_to?(:to_datetime) #There's a date instead of an empty string
+    #      fi.last_updated = item.updated.to_datetime # <<--- here! 
+    #    end
+    #    #More happens. . . 
+    #    fi.save
+    #  end
     #
     # == Examples
     #
