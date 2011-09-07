@@ -64,8 +64,10 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
     else
       s.add_dependency(%q<feed-abstract>, [">= 0"])
+      s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
@@ -74,6 +76,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<feed-abstract>, [">= 0"])
+    s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
