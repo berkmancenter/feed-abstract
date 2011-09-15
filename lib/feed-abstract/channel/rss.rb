@@ -61,7 +61,7 @@ module FeedAbstract
       # The authors (a merge of the RSS managingEditor and dc:publisher elements) as an array.
       def authors
         return [] if @feed.channel.managingEditor.nil? && @feed.channel.dc_publishers.empty?
-        [@feed.channel.managingEditor, @feed.channel.dc_publishers].flatten.uniq
+        [@feed.channel.managingEditor, @feed.channel.dc_publishers].flatten.uniq.compact.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
       # The author list joined with a comma.
@@ -73,13 +73,13 @@ module FeedAbstract
       # The category list (a merge of the RSS category and dc:subject elements) as an array. 
       def categories
         return [] if @feed.channel.categories.empty? && @feed.channel.dc_subjects.empty?
-        [@feed.channel.categories, @feed.channel.dc_subjects].flatten.uniq.collect{|c| c.content}
+        [@feed.channel.categories, @feed.channel.dc_subjects].flatten.uniq.compact.collect{|c| c.content}.reject{|c| c == '' || c.match(/^\s+$/)}
       end
 
       # The category list as a string, joined with a comma.
       def category
-        return '' if @feed.channel.categories.empty?
-        @feed.channel.categories.collect{|c| c.content}.join(', ')
+        return '' if self.categories.empty?
+        self.categories.join(', ')
       end
 
       # A URL to an icon representing this feed.

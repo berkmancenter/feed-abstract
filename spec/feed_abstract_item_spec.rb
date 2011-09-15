@@ -30,6 +30,8 @@ module FeedAbstract
       @deliciousitem.title.should == 'aspic and other delights'
       @zoteroitem.title.should == 'An experimental application of the Delphi method to the use of experts'
       @feedburneritem.title.should == 'Did Libya help CIA with renditions of terror suspects?'
+      @pyblosxomitem.title.should == "Anxiety\n"
+
     end
 
     it "should have the correct summary" do 
@@ -44,6 +46,8 @@ module FeedAbstract
       @feedburneritem.summary.should == %q|Documents seized at Libyan intelligence headquarters have unearthed insights into the CIA's surprisingly close relationship with counterparts in the Gadhafi regime.<div class="feedflare">
 <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?i=sV5N-C76mOM:9JZ1FBt9fS4:V_sGLiPBpWU" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=qj6IDK7rITs" border="0"></img></a> <a href="http://rss.cnn.com/~ff/rss/cnn_topstories?a=sV5N-C76mOM:9JZ1FBt9fS4:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/rss/cnn_topstories?i=sV5N-C76mOM:9JZ1FBt9fS4:gIN9vFwOqvQ" border="0"></img></a>
 </div><img src="http://feeds.feedburner.com/~r/rss/cnn_topstories/~4/sV5N-C76mOM" height="1" width="1"/>|
+
+      @pyblosxomitem.summary.should == ""
     end
 
     it "should have the correct content" do 
@@ -93,6 +97,7 @@ module FeedAbstract
         </table>
       </div>|
       @feedburneritem.content.should == ''
+      @pyblosxomitem.content.should == %Q|<div><a href='http://www.flickr.com/photos/nffcnnr/401047557/' target='_blank'><img src='http://farm1.static.flickr.com/137/401047557_1dda26e16f.jpg' width=350 alt='MailBoxes by nffcnnr, on Flickr' title='MailBoxes by nffcnnr, on Flickr' border='0'/></a><br/><a href='http://creativecommons.org/licenses/by/2.0/' target='_blank'><img src='http://i.creativecommons.org/l/by/2.0/80x15.png' alt='Creative Commons Attribution 2.0 Generic License' title='Creative Commons Attribution 2.0 Generic License' border='0' align='left'></a>&nbsp;&nbsp;by&nbsp;<a href='http://www.flickr.com/people/nffcnnr/' target='_blank'>&nbsp;nffcnnr</a><a href='http://www.imagecodr.org/' target='_blank'>&nbsp;</a></div><p>I am haunted by the nagging fear that I have mailboxes, tucked into a\ndark corner of an office somewhere, and perhaps even full of checks\nand important documents, that I don't know exist.</p>\n|
     end
 
     it "should have the correct link" do
@@ -103,6 +108,7 @@ module FeedAbstract
       @deliciousitem.link.should == 'http://aspicandotherdelights.tumblr.com/'
       @zoteroitem.link.should == 'https://api.zotero.org/groups/52650/items/FHDJ5PXZ'
       @feedburneritem.link.should == 'http://rss.cnn.com/~r/rss/cnn_topstories/~3/sV5N-C76mOM/index.html'
+      @pyblosxomitem.link.should == 'http://mako.cc/copyrighteous/20110913-00'
     end
 
     it "should have the correct author" do
@@ -113,6 +119,7 @@ module FeedAbstract
       @deliciousitem.author.should == 'djcp'
       @zoteroitem.author.should == 'ingle.atul'
       @feedburneritem.author.should == ''
+      @pyblosxomitem.author.should == ''
     end
     
     it "should have the correct authors" do
@@ -123,6 +130,7 @@ module FeedAbstract
       @deliciousitem.authors.should == ['djcp']
       @zoteroitem.authors.should == ['ingle.atul']
       @feedburneritem.authors.should == []
+      @pyblosxomitem.authors.should == []
     end
 
     it "should have the correct contributor" do
@@ -133,6 +141,7 @@ module FeedAbstract
       @deliciousitem.contributor.should == ''
       @zoteroitem.contributor.should == ''
       @feedburneritem.contributor.should == ''
+      @pyblosxomitem.contributor.should == ''
     end
     
     it "should have the correct contributors" do
@@ -143,6 +152,7 @@ module FeedAbstract
       @deliciousitem.contributors.should == []
       @zoteroitem.contributors.should == []
       @feedburneritem.contributors.should == []
+      @pyblosxomitem.contributors.should == []
     end
 
     it "should have the correct category" do
@@ -153,6 +163,7 @@ module FeedAbstract
       @deliciousitem.category.should == 'cooking, oddness'
       @zoteroitem.category.should == ''
       @feedburneritem.category.should == ''
+      @pyblosxomitem.category.should == ''
     end
 
     it "should have the correct categories" do
@@ -163,6 +174,7 @@ module FeedAbstract
       @deliciousitem.categories.should == ['cooking', 'oddness']
       @zoteroitem.categories.should == []
       @feedburneritem.categories.should == []
+      @pyblosxomitem.categories.should == []
     end
 
     it "should have the correct rights" do
@@ -173,6 +185,7 @@ module FeedAbstract
       @deliciousitem.rights.should == ''
       @zoteroitem.rights.should == ''
       @feedburneritem.rights.should == ''
+      @pyblosxomitem.rights.should == ''
     end
 
     it "should have been updated at the correct time" do
@@ -183,6 +196,7 @@ module FeedAbstract
       @deliciousitem.updated.should == Time.parse('Fri, 19 Aug 2011 00:56:26 +0000')
       @zoteroitem.updated.should == Time.parse('2011-09-02T17:16:11Z')
       @feedburneritem.updated.should == Time.parse('Sat, 03 Sep 2011 16:11:39 EDT')
+      @pyblosxomitem.updated.should == Time.parse('2011-09-15T05:21:00Z')
     end
 
     it "should have been published at the proper time" do
@@ -193,6 +207,7 @@ module FeedAbstract
       @deliciousitem.published.should == Time.parse('Fri, 19 Aug 2011 00:56:26 +0000')
       @zoteroitem.published.should == Time.parse('2011-09-02T17:14:22Z')
       @feedburneritem.published.should == Time.parse('Sat, 03 Sep 2011 16:11:39 EDT')
+      @pyblosxomitem.published.should == Time.parse('2011-09-15T05:21:00Z')
     end
 
     it "should have the proper guid" do
@@ -203,6 +218,7 @@ module FeedAbstract
       @deliciousitem.guid.should == 'http://www.delicious.com/url/6e0504ca698232809a0b5065e8b83031#djcp'
       @zoteroitem.guid.should == 'http://zotero.org/groups/pros_paper/items/FHDJ5PXZ'
       @feedburneritem.guid.should == 'http://www.cnn.com/2011/WORLD/africa/09/03/libya.west.spies/index.html?eref=rss_topstories'
+      @pyblosxomitem.guid.should == 'http://mako.cc/copyrighteous/2011/09/15/20110913-00'
     end
 
   end

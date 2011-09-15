@@ -6,7 +6,7 @@ module FeedAbstract
 
       # The author list (from the dc:creator element) as an array.
       def authors
-        (@item.dc_creators.empty?) ? [] : @item.dc_creators.collect{|c| c.content}
+        (@item.dc_creators.empty?) ? [] : @item.dc_creators.collect{|c| c.content}.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
       # The author list as a string, joined with a comma.
@@ -18,7 +18,7 @@ module FeedAbstract
       # The category list (parsed from the dc:subject element) as an array.
       def categories
         return [] if @item.dc_subjects.empty?
-        @item.dc_subjects.collect{|c| c.content}
+        @item.dc_subjects.collect{|c| c.content}.reject{|c| c == '' || c.match(/^\s+$/)}
       end
 
       # The category list as a string, joined with a comma.

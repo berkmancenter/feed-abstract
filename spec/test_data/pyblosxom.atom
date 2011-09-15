@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Copyrighteous</title>
+<subtitle type="html"><![CDATA[
+
+]]></subtitle>
+<id>http://mako.cc/copyrighteous/</id>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous" />
+<link rel="self" type="application/atom+xml" href="http://mako.cc/copyrighteous/?flav=atom" />
+
+<author>
+<name>Benjamin Mako Hill</name>
+<uri>http://mako.cc/copyrighteous/</uri>
+<email>mako@atdot.cc</email>
+</author>
+<rights>Creative Commons Attribution-ShareAlike</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5rc2 20100803">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5rc2 20100803
+</generator>
+
+<updated>2011-09-15T05:21:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">Anxiety
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/09/15/20110913-00</id>
+<updated>2011-09-15T05:21:00Z</updated>
+<published>2011-09-15T05:21:00Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110913-00" />
+<content type="html">&lt;div&gt;&lt;a href=&#x27;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;nffcnnr&#x2F;401047557&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&lt;img src=&#x27;http:&#x2F;&#x2F;farm1.static.flickr.com&#x2F;137&#x2F;401047557_1dda26e16f.jpg&#x27; width=350 alt=&#x27;MailBoxes by nffcnnr, on Flickr&#x27; title=&#x27;MailBoxes by nffcnnr, on Flickr&#x27; border=&#x27;0&#x27;&#x2F;&gt;&lt;&#x2F;a&gt;&lt;br&#x2F;&gt;&lt;a href=&#x27;http:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by&#x2F;2.0&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&lt;img src=&#x27;http:&#x2F;&#x2F;i.creativecommons.org&#x2F;l&#x2F;by&#x2F;2.0&#x2F;80x15.png&#x27; alt=&#x27;Creative Commons Attribution 2.0 Generic License&#x27; title=&#x27;Creative Commons Attribution 2.0 Generic License&#x27; border=&#x27;0&#x27; align=&#x27;left&#x27;&gt;&lt;&#x2F;a&gt;&amp;nbsp;&amp;nbsp;by&amp;nbsp;&lt;a href=&#x27;http:&#x2F;&#x2F;www.flickr.com&#x2F;people&#x2F;nffcnnr&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&amp;nbsp;nffcnnr&lt;&#x2F;a&gt;&lt;a href=&#x27;http:&#x2F;&#x2F;www.imagecodr.org&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&amp;nbsp;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;&lt;p&gt;I am haunted by the nagging fear that I have mailboxes, tucked into a
+dark corner of an office somewhere, and perhaps even full of checks
+and important documents, that I don&#x27;t know exist.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">In Defense of Negativity
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/09/03/20110903-00</id>
+<updated>2011-09-04T00:01:35Z</updated>
+<published>2011-09-04T00:01:35Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110903-00" />
+<content type="html">&lt;p&gt;I often hear criticism of &amp;quot;negative campaigning&amp;quot; in the free software
+movement. For example, in reply to a &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mako.cc&#x2F;copyrighteous&#x2F;20090109-00.comment&quot;&gt;blog post I once wrote&lt;&#x2F;a&gt; about
+an FSF campaign, several people argued against, &amp;quot;negative campaigning
+of any sort, in any realm.&amp;quot; Drawing an analogy to political &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Smear_campaign&quot;&gt;smear
+campaigns&lt;&#x2F;a&gt;, some members of the free software community have taken
+the position that &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;castrojo.wordpress.com&#x2F;2009&#x2F;01&#x2F;09&#x2F;badvista-declares-pyrrhic-victory&#x2F;#comment-745&quot;&gt;negative campaigning in general is not useful&lt;&#x2F;a&gt;
+and that negativity has no place in our advocacy.&lt;&#x2F;p&gt;
+&lt;p&gt;First, it is important to be clear on what we mean by a negative
+campaigns. I believe that there is a fundamental difference between
+speaking out against policies or actions and smear campaigns that
+employ untrue claims, ad hominem attacks, and that attempt to avoid a
+real conversation about issues. I will categorically condemn the
+latter form of smear campaigning in campaigns for software freedom or
+for anything else.&lt;&#x2F;p&gt;
+&lt;p&gt;That said, negativity directed at negativity has had a positive effect
+in many social movements. I have supported and participated in
+&amp;quot;negative&amp;quot; campaigns against proprietary software, software patents,
+DRM, centralized network services, and the firms behind these
+practices. I&#x27;ve done so because I believe that if one is taking an
+ethical position, it is justified, and often necessary, to not only
+speak about the benefits of freedom but against acts of dispossession
+and disenfranchisement.&lt;&#x2F;p&gt;
+&lt;p&gt;In some of the most effective social movements, unambiguously negative
+messages have been central. Should a campaign for abolishing child
+labor talk only about how valuable adult workers are to their
+employers or how happy kids are when they don&#x27;t work?  Should a
+campaign trying to abolish land mines talk only about the benefits of
+bomb-free fields and intact lower limbs?  Should a free speech
+organization only speak out about the social welfare brought by a free
+press and never against acts of censorship? These may seem like
+outlandish comparisons but you can find people writing, only a couple
+centuries ago, about how slavery should be abolished by arguing in
+favor of the benefits of paid labor.  Even if the economic arguments
+in favor of paid work are strong, these arguments seems irrelevant and
+offensive today.  Whether slavery is more or less efficient is a moot
+point. Society has rejected it because it is wrong.&lt;&#x2F;p&gt;
+&lt;p&gt;We have made important strides toward eliminating injustices like
+child labor and slavery because activists waged decidedly negative
+campaigns against them and convinced others to join in opposition. In
+doing so, activists declared the status quo unconscionable and created
+an ethical responsibility to find alternatives and to &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mako.cc&#x2F;copyrighteous&#x2F;20101017-00&quot;&gt;redefine what
+was &amp;quot;realistic.&amp;quot;&lt;&#x2F;a&gt; While I will not suggest that the movement for
+software freedom is comparable in ethical weight to these other
+causes, I know that the free software mission is similar in kind.&lt;&#x2F;p&gt;
+&lt;p&gt;Of course, if one does not think that user control over technology is
+an ethical issue but is instead merely a matter of choice, one will
+probably oppose negative campaigns. It is also possible that a
+particular negative campaign is tactically unwise in that it is
+unlikely to reach a large audience, unlikely to change people&#x27;s minds,
+or be difficult to carry out successfully. But such campaigns are a
+bad idea because they are ineffective, not because they are
+negative. Additionally, a movement that is purely negative and offers
+no reasonable alternative to the stated ill may also be unlikely to
+succeed. This is why, for example, I believe it is good that the FSF
+uses the large majority of its resources in the &amp;quot;positive&amp;quot; role of
+supporting free software.&lt;&#x2F;p&gt;
+&lt;p&gt;For those that do treat technological empowerment as an ethical ideal,
+it is both justified and essential to condemn the systematic
+disempowerment of others through non-free software just as we
+celebrate the benefits of software freedom. &amp;quot;Negative&amp;quot; campaigns
+against proprietary software, software patents, and DRM in music have
+already led our community to important -- if incomplete --
+victories. The desire to right wrongs has been a critical part of our
+movement&#x27;s success and of many others&#x27;. We would be wise not to give
+it up.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Donner Pass
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/08/29/20110829-00</id>
+<updated>2011-08-29T20:52:22Z</updated>
+<published>2011-08-29T20:52:22Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110829-00" />
+<content type="html">&lt;img alt=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;bierstadt-donner_lake.png&quot; src=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;bierstadt-donner_lake.png&quot; &#x2F;&gt;
+&lt;p&gt;In the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.pem.org&#x2F;&quot;&gt;Peabody Essex Museum&lt;&#x2F;a&gt; a couple weeks ago, I saw a beautiful
+landscape by Albert Bierstadt of &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;secure.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;wiki&#x2F;Donner_Pass&quot;&gt;Donner Pass&lt;&#x2F;a&gt; whose &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.tfaoi.com&#x2F;aa&#x2F;9aa&#x2F;9aa523.htm&quot;&gt;label&lt;&#x2F;a&gt;
+referenced the famous &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;secure.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;wiki&#x2F;Donner_party&quot;&gt;Donner Party&lt;&#x2F;a&gt; of 1846 and their, &amp;quot;sensational
+story of privation, cannibalism, and death.&amp;quot; I would reorder
+that sentence.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">An App For That
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/08/28/20110828-00</id>
+<updated>2011-08-28T21:22:15Z</updated>
+<published>2011-08-28T21:22:15Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110828-00" />
+<content type="html">&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;seeclickfix.com&#x2F;&quot;&gt;SeeClickFix&lt;&#x2F;a&gt; makes &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;en.seeclickfix.com&#x2F;apps&quot;&gt;a mobile application&lt;&#x2F;a&gt; you can use to &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;en.seeclickfix.com&#x2F;watch_area&#x2F;1444&quot;&gt;report
+Boston drivers using their smartphones while driving&lt;&#x2F;a&gt;, while
+driving.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Care and Trust
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/08/05/20110805-00</id>
+<updated>2011-08-05T14:29:38Z</updated>
+<published>2011-08-05T14:29:38Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110805-00" />
+<content type="html">&lt;p&gt;When you care for somebody, it is difficult to tell them &amp;quot;no.&amp;quot;  When
+you trust somebody, you will tell them.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Cost of Computing in Coal
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/07/31/20110727-00</id>
+<updated>2011-07-31T21:41:30Z</updated>
+<published>2011-07-31T21:41:30Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110727-00" />
+<content type="html">&lt;div&gt;&lt;a href=&#x27;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;jonasclemens&#x2F;2991502785&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&lt;img src=&#x27;http:&#x2F;&#x2F;farm4.static.flickr.com&#x2F;3166&#x2F;2991502785_500c3270e9.jpg&#x27; alt=&#x27; by jonasclemens, on Flickr&#x27; title=&#x27; by jonasclemens, on Flickr&#x27; border=&#x27;0&#x27;&#x2F;&gt;&lt;&#x2F;a&gt;&lt;br&#x2F;&gt;&lt;a href=&#x27;http:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by&#x2F;2.0&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&lt;img src=&#x27;http:&#x2F;&#x2F;i.creativecommons.org&#x2F;l&#x2F;by&#x2F;2.0&#x2F;80x15.png&#x27; alt=&#x27;Creative Commons Attribution 2.0 Generic License&#x27; title=&#x27;Creative Commons Attribution 2.0 Generic License&#x27; border=&#x27;0&#x27; align=&#x27;left&#x27;&gt;&lt;&#x2F;a&gt;&amp;nbsp;&amp;nbsp;by&amp;nbsp;&lt;a href=&#x27;http:&#x2F;&#x2F;www.flickr.com&#x2F;people&#x2F;jonasclemens&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&amp;nbsp;jonasclemens&lt;&#x2F;a&gt;&lt;a href=&#x27;http:&#x2F;&#x2F;www.imagecodr.org&#x2F;&#x27; target=&#x27;_blank&#x27;&gt;&amp;nbsp;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;&lt;&#x2F;center&gt;&lt;p&gt;Much of my academic research involves statistics and crunching through
+big datasets. To do this, I use computer clusters like &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;aws.amazon.com&#x2F;ec2&#x2F;&quot;&gt;Amazon&#x27;s
+EC2&lt;&#x2F;a&gt; and a cluster at the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;hmdc.harvard.edu&#x2F;&quot;&gt;Harvard MIT Data Center&lt;&#x2F;a&gt;. I will
+frequently kick of a job to run overnight on the full HMDC cluster of
+~100 computers. Some of my friends do so nearly every night on similar
+clusters. Like many researchers and engineers, it costs me nothing to
+kick off a big job. That said, computers consume a lot of energy so I
+did a little back-of-the-envelope calculation to figure out what the
+cost in terms of resources might add up to.&lt;&#x2F;p&gt;
+&lt;p&gt;An overnight job that uses a 100 computer cluster might use 800
+computer-hours. Although power efficiency varies hugely between
+computers, most statistical analysis is CPU intensive and should come
+close to maximizing power consumption. According to a few sources
+[e.g., &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;michaelbluejay.com&#x2F;electricity&#x2F;computers.html&quot;&gt;1&lt;&#x2F;a&gt; &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.brighthub.com&#x2F;environment&#x2F;green-computing&#x2F;articles&#x2F;9351.aspx&quot;&gt;2&lt;&#x2F;a&gt; &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.ehow.com&#x2F;about_4693473_much-electricity-does-computer-use.html&quot;&gt;3&lt;&#x2F;a&gt;], 200 watts might be a conservative estimate
+of much a modern multi-CPU server will draw under high load and won&#x27;t
+include other costs like cooling. Using this estimate, the overnight
+job on 100 machines would easily use 160 kilowatt hours (kWh) of
+energy.&lt;&#x2F;p&gt;
+&lt;p&gt;In Massachusetts, most of our power comes from coal. &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;science.howstuffworks.com&#x2F;environmental&#x2F;energy&#x2F;question481.htm&quot;&gt;This page&lt;&#x2F;a&gt;
+suggests that an efficient coal plant will generate 2,460 kWh for each
+ton of coal.  That means that one overnight job would use &lt;em&gt;59 kg (130
+lbs) of coal&lt;&#x2F;em&gt;.  In the process, you would also create 153 kg (338 lb)
+of CO2 and a bit under half a kilogram (about 1 lb) of nitrogen oxides
+and sulfur dioxide each. It&#x27;s a &lt;em&gt;very&lt;&#x2F;em&gt; rough estimate but it certainly
+generates some pressure to make sure the research counts!&lt;&#x2F;p&gt;
+&lt;p&gt;Of course, I&#x27;ve written some free software that runs on many thousands
+of computers and servers. How many tons of coal are burnt to support
+laziness or a lack of optimization in my software? What is the coal
+cost of choosing to write a program in a less efficient, but easier to
+write, higher-level programming languages like Python or Ruby instead
+of writing a more efficient version in C?&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Dates and Memory
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/07/26/20110726-00</id>
+<updated>2011-07-26T18:53:41Z</updated>
+<published>2011-07-26T18:53:41Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110726-00" />
+<content type="html">&lt;p&gt;Recently, I was working with &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;dgh.livejournal.com&#x2F;&quot;&gt;Daf&lt;&#x2F;a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;web.rmozone.com&#x2F;&quot;&gt;Rob&lt;&#x2F;a&gt; on a little offline wiki
+project -- more on that soon -- and we realized that we needed to
+parse some dates in &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;secure.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;wiki&#x2F;ISO_8601&quot;&gt;ISO 8601 format&lt;&#x2F;a&gt;. One of us wondered out loud
+if there was a Python module that could help us. I offered to take a
+look.&lt;&#x2F;p&gt;
+&lt;p&gt;Turns out, less than two months before, someone had uploaded &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;packages.debian.org&#x2F;search?keywords=python-iso8601&quot;&gt;just such
+a module&lt;&#x2F;a&gt; into Debian. The maintainer? Me.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Lawn Scrabble
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/07/25/20110725-00</id>
+<updated>2011-07-26T01:31:45Z</updated>
+<published>2011-07-26T01:31:45Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110725-00" />
+<content type="html">&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;acetarium.com&quot;&gt;The Acetarium&lt;&#x2F;a&gt;, where I live, runs what we like to think of as &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;wiki.mako.cc&#x2F;Acetarium#Residency_program&quot;&gt;the
+world&#x27;s smallest artistic residency program&lt;&#x2F;a&gt; by hosting artists,
+social scientists, hackers, and free software and free culture folks
+for periods of 1-3 months.&lt;&#x2F;p&gt;
+&lt;p&gt;Our most recently graduated resident, &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;wiki.mako.cc&#x2F;Noah_Swartz&quot;&gt;Noah&lt;&#x2F;a&gt;, built a lawn scrabble
+set on the Media Lab &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.shopbottools.com&#x2F;&quot;&gt;ShopBot&lt;&#x2F;a&gt; and held a Scrabble picnic this weekend
+with some former Acetarium residents and others. I don&#x27;t really like
+playing Scrabble, so you can see me working on an essay (and verifying
+words) in the background.&lt;&#x2F;p&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http:&#x2F;&#x2F;bemasc.net&#x2F;wordpress&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;07&#x2F;20110723_011-Modified-in-GIMP-Image-Editor.jpg&quot;&gt;&lt;img alt=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;lawn_scrabble_01.jpg&quot; src=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;lawn_scrabble_01.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;div class=&quot;line-block&quot;&gt;
+&lt;div class=&quot;line&quot;&gt;&lt;br &#x2F;&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http:&#x2F;&#x2F;bemasc.net&#x2F;wordpress&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;07&#x2F;20110723_004-Modified-in-GIMP-Image-Editor.jpg&quot;&gt;&lt;img alt=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;lawn_scrabble_02.jpg&quot; src=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;lawn_scrabble_02.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;p&gt;Thanks to Ben Schwartz as I yoinked these pictures from &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;bemasc.net&#x2F;wordpress&#x2F;2011&#x2F;07&#x2F;23&#x2F;scrabble-2&#x2F;&quot;&gt;his blog&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Quiet Room
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/07/18/20110718-00</id>
+<updated>2011-07-18T17:14:20Z</updated>
+<published>2011-07-18T17:14:20Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110718-00" />
+<content type="html">&lt;p&gt;At the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.cph.dk&#x2F;CPH&#x2F;UK&#x2F;MAIN&#x2F;&quot;&gt;Copenhagen airport&lt;&#x2F;a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mika.yukidoke.org&#x2F;nikki&quot;&gt;Mika&lt;&#x2F;a&gt; and I found the quiet room. It
+was a soft, well lit, room designed for prayer and reflection. During
+the hour I was in it, the only other visitor was a child cracking open
+the doorway to peer in. The room had a guest book with hundreds of
+messages left by other travelers over the last couple years. People
+praised the airport administrators for providing the room, made
+suggestions, and complained about the room, the airport, and the
+country&#x27;s shortcomings. They talked about themselves, their travels,
+their happiness and unhappiness with departing or returning home, and
+their thoughts about the world.&lt;&#x2F;p&gt;
+&lt;p&gt;I spend a lot of time in airports but only rarely speak to my fellow
+travelers. It&#x27;s amazing how little I know about the thousands of
+people waiting in line with me, sitting near me on the plane, and
+sharing in the long, lonely, and often stressful experience of moving
+between countries and continents. The guest book provided a rare
+window into these people in what is normally the anonymous and
+depersonalized &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;product&#x2F;1859840515&#x2F;ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=httmakcc-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399369&amp;amp;creativeASIN=185984051&quot;&gt;non-place&lt;&#x2F;a&gt; of airports. In the quiet room, I could
+-- for the first time -- hear some of these fellow travelers speak.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Die Technikmafia
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/07/17/20110717-00</id>
+<updated>2011-07-18T01:00:04Z</updated>
+<published>2011-07-18T01:00:04Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110717-00" />
+<content type="html">&lt;p&gt;Marcus Rohwetter has recently published &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.zeit.de&#x2F;zeit-wissen&#x2F;2011&#x2F;04&#x2F;Antifeatures&quot;&gt;a very detailed article about
+Antifeatures&lt;&#x2F;a&gt; in the German monthly magazine &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.zeit.de&quot;&gt;Zeit
+Wissen&lt;&#x2F;a&gt;. Although I&#x27;ve only read the article through automatic
+translation -- unfortunately, I don&#x27;t read German -- I&#x27;m &lt;em&gt;hugely&lt;&#x2F;em&gt;
+honored that Rohwetter has taken the time to engage with the idea so
+deeply and to help translate the argument for a much broader community
+than the free software community I come from and am best able to
+speak to.&lt;&#x2F;p&gt;
+&lt;p&gt;A lot of what I&#x27;ve been trying to do in the last year or so is to
+figure out how to speak more effectively about the politics of
+technology control to audiences of non-technologists. Indeed, that&#x27;s
+the whole point of the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;wiki.mako.cc&#x2F;Antifeatures&quot;&gt;antifeatures concept&lt;&#x2F;a&gt;. I deeply appreciate
+the help of Rohwetter, and others, in that project.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Berkman Fellowship
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/06/30/20110630-00</id>
+<updated>2011-06-30T16:48:43Z</updated>
+<published>2011-06-30T16:48:43Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110630-00" />
+<content type="html">&lt;p&gt;Last week, the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;cyber.law.harvard.edu&quot;&gt;Berkman Center for Internet and Society&lt;&#x2F;a&gt; announced
+it&#x27;s &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;cyber.law.harvard.edu&#x2F;newsroom&#x2F;2011_2012_fellows&quot;&gt;2011-2012 list of fellows&lt;&#x2F;a&gt;. I&#x27;m honored and excited that they
+elected to include me in a pretty incredible list of fellows, faculty
+associates, and other affiliates. It seems I&#x27;ll be at Harvard next year.&lt;&#x2F;p&gt;
+&lt;p&gt;In my first year as an undergraduate -- when fights over Napster were
+raging -- I took a class taught by a Berkman Fellow on the political
+and social implications of Internet technology. The next year, I
+worked part-time as a teaching assistant for Harvard Law professor
+(and Berkman director) &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;cyber.law.harvard.edu&#x2F;people&#x2F;jzittrain&quot;&gt;Jonathan Zittrain&lt;&#x2F;a&gt;. These experiences had a
+enormous influence on my life and work. Before, my goal was to
+study and teach English literature.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve hung around on the fringes of the center for much of the last
+decade and I&#x27;ve grown immeasurably from the experience. Most recently,
+I&#x27;ve been working closely with Berkman director &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.benkler.org&#x2F;&quot;&gt;Yochai Benkler&lt;&#x2F;a&gt; and
+current fellow &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;aaronshaw.org&#x2F;&quot;&gt;Aaron Shaw&lt;&#x2F;a&gt; on research in online cooperation. The
+new crop of fellows includes a pretty great group of people working on
+similar stuff and I&#x27;m looking forward to expanding the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;cyber.law.harvard.edu&#x2F;research&#x2F;cooperation&quot;&gt;online
+cooperation research at the center&lt;&#x2F;a&gt; and to a year of fascinating
+talks and discussions. I also hope that, after all these, years, I&#x27;ll
+be able to give a bit back to an organization that has given me so
+much.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Another Summer European Tour
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/06/29/20110629-00</id>
+<updated>2011-06-29T16:41:03Z</updated>
+<published>2011-06-29T16:41:03Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110629-00" />
+<content type="html">&lt;p&gt;I&#x27;ve been in Europe for the last couple weeks but pretty occupied with
+things like attending my brother wedding and a series of outdoor
+excursions in Spain.&lt;&#x2F;p&gt;
+&lt;p&gt;Today &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mika.yukidoke.org&#x2F;nikki&quot;&gt;Mika&lt;&#x2F;a&gt; and I arrived in Berlin where I am going to attending and
+giving a talk at the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;okcon.org&#x2F;2011&#x2F;&quot;&gt;Open Knowledge Conference&lt;&#x2F;a&gt; on &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;okcon.org&#x2F;2011&#x2F;programme&#x2F;when-free-software-isnt-better&quot;&gt;When Free
+Software Isn&#x27;t Better&lt;&#x2F;a&gt;. I&#x27;ll also participate in &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;okcon.org&#x2F;2011&#x2F;programme&#x2F;wikipedia-research-the-innovative-character-of-wikipedia-research-and-the-new-challenges-and-opportunities-associated-with-it&quot;&gt;a session on
+Wikipedia research&lt;&#x2F;a&gt; facilitated by &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.onlinecreation.info&#x2F;&quot;&gt;Mayo Fuster Morrell&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;On July 2nd, I&#x27;ll be taking an overnight train to Vienna where I&#x27;ll be
+attending the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;ouicommunity.net&#x2F;&quot;&gt;Open and User Innovation Workshop&lt;&#x2F;a&gt; -- an academic
+conference where I&#x27;ll presenting some of my research. From there I&#x27;ll
+be hitching a ride to Munich with &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;protopage.com&#x2F;kiberkomunist&quot;&gt;Marcell Mars&lt;&#x2F;a&gt; on July 6th and,
+after that, a flight back to Boston with a weekend long layover in
+Reykjavik.&lt;&#x2F;p&gt;
+&lt;p&gt;Details on the trip are &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;wiki.mako.cc&#x2F;Travel_plans&#x2F;Summer_2011&quot;&gt;on page on my wiki&lt;&#x2F;a&gt; and I encourage anyone
+to &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mako.cc&#x2F;contact&quot;&gt;contact me&lt;&#x2F;a&gt; if you&#x27;re in Berlin, Vienna, Munich, or Reykjavik
+and want to meet up for a drink or a chat.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Ask Me Anything in an Igloo
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/02/19/20110219-00</id>
+<updated>2011-02-19T18:42:16Z</updated>
+<published>2011-02-19T18:42:16Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110219-00" />
+<content type="html">&lt;img alt=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;igloo_danny.jpg&quot; class=&quot;align-right&quot; src=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;igloo_danny.jpg&quot; &#x2F;&gt;
+&lt;p&gt;When &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.reddit.com&#x2F;&quot;&gt;Reddit&lt;&#x2F;a&gt; sold to Condé Nast and the founders all moved to
+California, their old place in &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;secure.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;wiki&#x2F;Davis_Square&quot;&gt;Davis Square&lt;&#x2F;a&gt; was empty for a few
+months and they let &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mika.yukidoke.org&#x2F;nikki&#x2F;&quot;&gt;Mika&lt;&#x2F;a&gt; I move in and take it over. It&#x27;s an awesome
+place and we&#x27;re still there along with some &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;min.us&#x2F;mvfPWXg#1&quot;&gt;Web 2.0 graffiti&lt;&#x2F;a&gt; they
+left on the roof.&lt;&#x2F;p&gt;
+&lt;p&gt;And so it is with pleasure that I&#x27;ve agreed to be interviewed by
+redditor &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;blog.thesilentnumber.me&#x2F;&quot;&gt;Danny Piccirillo&lt;&#x2F;a&gt; in a &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;picasaweb.google.com&#x2F;danny.piccirillo&#x2F;Iglootarium&quot;&gt;giant igloo he helped build&lt;&#x2F;a&gt; --
+if the unseasonably warm weather streak of weather doesn&#x27;t manage to
+melt it before next week.&lt;&#x2F;p&gt;
+&lt;p&gt;Questions are being gathered at Reddit so feel free to &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;reddit.com&#x2F;comments&#x2F;fnw13&#x2F;free_software_leader_benjamin_mako_hill_has&#x2F;&quot;&gt;go there and
+ask me any question you&#x27;d like to see me answer in an igloo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Editor-to-Reader Ratios on Wikipedia
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/02/06/20110206-00</id>
+<updated>2011-02-06T11:48:41Z</updated>
+<published>2011-02-06T11:48:41Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110206-00" />
+<content type="html">&lt;p&gt;It&#x27;s been &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;secure.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;wiki&#x2F;Wikipedia:Wikipedia_Signpost&#x2F;2009-11-23&#x2F;In_the_news&quot;&gt;reported for some time&lt;&#x2F;a&gt; now that the number of active
+editors on Wikipedia (usually defined as people who have edited at
+least 5 times in a given month) peaked in 2007 and has been mostly
+stable since then. A graph of the total number of active editors in
+every month since Wikipedia&#x27;s founding is shown below. The graph shows
+the aggregate numbers for all language Wikipedias. English Wikipedia
+is the largest component of this and is generally more variable.  That
+said, very similar patterns exist for most larger languages.&lt;&#x2F;p&gt;
+&lt;img alt=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;active_editors_all_wikpiedia.png&quot; src=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;active_editors_all_wikpiedia.png&quot; &#x2F;&gt;
+&lt;p&gt;Felipe Ortega, who has provided many of these statistics, has &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.gossamer-threads.com&#x2F;lists&#x2F;wiki&#x2F;foundation&#x2F;183906#183906&quot;&gt;warned
+against fatalist claims&lt;&#x2F;a&gt;.  Although there seems to be a decrease in
+the total number of active editors over the last two years, the
+situation seems to have somewhat stabilized in most languages. New
+editors in Wikipedia are replacing folks at almost the rate that they
+are leaving. It is also widely known that the number of &lt;em&gt;readers&lt;&#x2F;em&gt; of
+Wikipedia has been increasing during this period. According to the
+&lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;stats.wikimedia.org&#x2F;reportcard&#x2F;&quot;&gt;report cards&lt;&#x2F;a&gt; released by the foundation using &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;secure.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;wiki&#x2F;ComScore&quot;&gt;comScore&lt;&#x2F;a&gt; data, the
+number of unique visitors to Wikipedia each month has increased by 61
+million people in the last year -- over 17%.&lt;&#x2F;p&gt;
+&lt;p&gt;This discrepancy between rising readership and stable or sinking
+editorship should raise major concern.  After all, the Wikimedia
+Foundation&#x27;s &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;wikimediafoundation.org&#x2F;wiki&#x2F;Mission_statement&quot;&gt;mission&lt;&#x2F;a&gt; is two part: (1) to empower and engage people
+around the world to collect and develop educational content and (2) to
+disseminate it effectively and globally. Although the Foundation
+report cards include measures of raw levels of editorship, a better
+metric of engagement and empowerment might be the &lt;em&gt;proportion&lt;&#x2F;em&gt; of
+readers who engage in editing.&lt;&#x2F;p&gt;
+&lt;p&gt;I could not find reliable data on the number of unique readers reached
+each month for more than a few months in the last year. What is
+available, however, is &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;stats.wikimedia.org&#x2F;&quot;&gt;wonderful data&lt;&#x2F;a&gt; on page views each month
+going back to 2008. Analysis of the data from available &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;stats.wikimedia.org&#x2F;reportcard&#x2F;&quot;&gt;report
+cards&lt;&#x2F;a&gt; show that, at least during the last year, there is a very
+stable ratio of 35 page views per unique visitor, as estimated by
+comScore. Using that measure, we can do a back of the envelope
+estimation on the proportion of users that are editors for the period
+where page view data is available, dating back from February 2008 (
+marked with the grey dashed lined above).&lt;&#x2F;p&gt;
+&lt;p&gt;The graphs below show the very different results you get when you
+consider the change in the number of Wikipedia editors and the change
+in the editor-to-reader ratio. Once again, these data are combined
+data for all language Wikipedias although graphs look very similar for
+most larger languages. The results are striking. Although there has
+been a 12% decrease between February 2008 and December 2010 in the
+number of active editors, there is a 42% decrease in the &lt;em&gt;proportion&lt;&#x2F;em&gt;
+of readers who edit at least five times a month. We can see that
+fulfilling the first half of the Wikimedia mission remains a struggle.&lt;&#x2F;p&gt;
+&lt;img alt=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;wikipedia_editors_combined_graph.png&quot; src=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;wikipedia_editors_combined_graph.png&quot; &#x2F;&gt;
+&lt;p&gt;Although the graphs above do not say anything directly about the most
+active core contributors to Wikipedia, the fact that Wikipedia is
+being maintained by a tiny -- and shrinking -- proportion of its
+readership does mean that the &lt;em&gt;idea&lt;&#x2F;em&gt; behind Wikipedia is under threat.&lt;&#x2F;p&gt;
+&lt;p&gt;Although none are as big as Wikipedia, there are lots of good
+encyclopedias out there. The reason Wikipedia is different,
+interesting, and important is because -- unlike all those others --
+Wikipedia is the encyclopedia &lt;em&gt;that anyone can edit&lt;&#x2F;em&gt;. Wikipedia is
+powerful because it allow its users to transcend their role as
+consumers of the information they use to understand the
+world. Wikipedia allows users to define the reference works that
+define their understanding of the their environment and each other.
+But 99.98% of the time, readers do not transcend that role. I think
+that&#x27;s a problem. Worse, that the number is growing.&lt;&#x2F;p&gt;
+&lt;p&gt;The Wikimedia Foundation recently ran a major successful effort to
+attract donations in its annual fundraiser. Jimmy Wales&#x27; smiling mug
+is apparently enough in the way of motivation to get something like 1%
+of its readers to donate money to support the project. I think that&#x27;s
+very good news. If the Wikimedia community can entice even half of
+those people to contribute through an &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;blogs.law.harvard.edu&#x2F;sj&#x2F;2011&#x2F;02&#x2F;05&#x2F;wikipedia-loves-editors&#x2F;&quot;&gt;increased involvement&lt;&#x2F;a&gt; in the
+projects themselves, they might do more than ensure Wikipedia&#x27;s
+continued growth. They would help take a step toward the empowerment
+and engagement of those users in sharing their own knowledge, and the
+continued fulfillment of a critically important mission.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Antifeatures at the Free Technology Academy
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/02/04/20110204-00</id>
+<updated>2011-02-05T03:23:45Z</updated>
+<published>2011-02-05T03:23:45Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110204-00" />
+<content type="html">&lt;p&gt;In addition to lecturing for two courses at MIT this term, I recently
+had the pleasure of giving a lecture on antifeatures at the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;ftacademy.org&#x2F;&quot;&gt;Free
+Technology Academy&lt;&#x2F;a&gt; -- a program which offers Masters courses over
+the Internet. Quite a few of the FTA courses are about free software,
+free knowledge, and related topics!&lt;&#x2F;p&gt;
+&lt;p&gt;It was my first time giving a lecture to microphone and an empty room.
+Although I found it a little tricky to adapt to the lack of any
+audience, the FTA folks put together a great video. I&#x27;m psyched that
+the course material will be available as &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;secure.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;wiki&#x2F;Open_educational_resources&quot;&gt;open education resources&lt;&#x2F;a&gt;
+for anyone who might want to incorporate it into another course.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;ve seen my &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mako.cc&#x2F;copyrighteous&#x2F;20100323-00&quot;&gt;LCA keynote about antifeatures&lt;&#x2F;a&gt; (which is also
+available online), there&#x27;s not going to be a whole new in the
+lecture. If didn&#x27;t see it, you might want to check out &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;campus.ftacademy.org&#x2F;course&#x2F;view.php?id=35&amp;amp;username=guest&quot;&gt;the
+lecture&lt;&#x2F;a&gt;. I&#x27;ll be in the online discussion group around the Lecture
+for the next couple weeks but you need to &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;campus.ftacademy.org&#x2F;login&#x2F;&quot;&gt;sign up&lt;&#x2F;a&gt; to participate.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Annual Free Software Foundation Fundraiser
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/01/24/20110124-00</id>
+<updated>2011-01-25T01:22:02Z</updated>
+<published>2011-01-25T01:22:02Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110124-00" />
+<content type="html">&lt;div style=&quot;float: right;&quot;&gt;
+&lt;div style=&quot;text-align: center; margin-left: 15px;&quot;&gt;
+&lt;script type=&quot;text&#x2F;javascript&quot;&gt;
+var fsf_widget_text = &quot;Help protect your freedom!&quot;;
+var fsf_widget_d_btn = &quot;Donate&quot;;
+var fsf_widget_share = &quot;Share this widget.&quot;;
+var fsf_widget_size = &quot;normal&quot;;
+var fsf_associate_id = &quot;3427&quot;;
+&lt;&#x2F;script&gt;
+&lt;script type=&quot;text&#x2F;javascript&quot;
+src=&quot;http:&#x2F;&#x2F;gplv3.fsf.org&#x2F;static&#x2F;widget&#x2F;widget.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;&lt;p&gt;The &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.fsf.org&#x2F;&quot;&gt;Free Software Foundation&lt;&#x2F;a&gt; is in the last week of its annual
+fundraiser and has still has a bit of ground to make up. The FSF needs
+members and donations to merely sustain its basic activity protecting
+free software and engaging in minimal outreach.  So as I&#x27;ve done in
+the last couple years, I&#x27;ve written a &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.fsf.org&#x2F;appeal&#x2F;2010&#x2F;mako&#x2F;&quot;&gt;fundraising appeal for the
+organization&lt;&#x2F;a&gt;. That why today my face is plastered, Jimmy Wales
+style, all over the &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.fsf.org&#x2F;&quot;&gt;FSF website&lt;&#x2F;a&gt;. (For the record, the last bit was
+not my idea and I find it a little embarrassing.)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.fsf.org&#x2F;appeal&#x2F;2010&#x2F;mako&#x2F;&quot;&gt;My appeal this year&lt;&#x2F;a&gt; begins with my feeling that as our lives
+become increasingly mediated by technology, the question of who
+controls technology becomes another way of asking &amp;quot;Who controls us?&amp;quot;
+&lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;www.fsf.org&#x2F;appeal&#x2F;2010&#x2F;mako&#x2F;&quot;&gt;Read the appeal&lt;&#x2F;a&gt; for more.&lt;&#x2F;p&gt;
+&lt;p&gt;That statement, like much of the FSF&#x27;s work, is not going to get very
+far with most users today. Most people don&#x27;t think of technology as
+the source of control, power, or autonomy. They don&#x27;t understand why
+software should be free or even what that might mean. Making this
+argument widely is something the FSF works hard to do. But supporting
+this work is a bit of a chicken-egg problem. The users we most need to
+reach have never heard our message and it can take some time to turn
+even the most receptive into supporters.&lt;&#x2F;p&gt;
+&lt;p&gt;For those of us that do care about technology and the power it has
+over its users, it&#x27;s hugely important that we take action to support
+software freedom and organizations like the FSF that play a key place
+in this struggle. If we don&#x27;t, nobody else will. The pool of people
+who might support the FSF today is small -- there are currently about
+3,000 members -- but the stakes are huge: A choice between a world of
+DRM, locked down mobile phones, and non-free network services on one
+hand, and the possibility of a world where there are free alternatives
+on the other. The FSF won&#x27;t win this fight alone, but it plays a
+critical role in it.&lt;&#x2F;p&gt;
+&lt;p&gt;The FSF is a small, humble, and responsible non-profit and a little
+money can have a big impact.  If you are not an FSF associate member,
+&lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;my.fsf.org&#x2F;associate&#x2F;support_freedom&#x2F;join_fsf?referrer=3427&quot;&gt;now would be a great time to join&lt;&#x2F;a&gt;. Membership is $120 per year
+($60 for students) and payable monthly. In preparing this appeal, I
+realized that my membership had lapsed a couple months ago and that my
+partner &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;mika.yukidoke.org&#x2F;nikki&quot;&gt;Mika&lt;&#x2F;a&gt; was still donating at the reduced student price. We&#x27;ve
+personally fixed both these things and made an additional donation.
+If you are a member, you can &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;my.fsf.org&#x2F;&quot;&gt;check your status&lt;&#x2F;a&gt; or &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;my.fsf.org&#x2F;donate&#x2F;mako&#x2F;&quot;&gt;make a
+donation&lt;&#x2F;a&gt;. If you are not yet, Please consider &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;my.fsf.org&#x2F;associate&#x2F;support_freedom&#x2F;join_fsf?referrer=3427&quot;&gt;joining us&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">An Only Slightly Fictionalized Story
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2011/01/18/20110118-00</id>
+<updated>2011-01-19T03:41:00Z</updated>
+<published>2011-01-19T03:41:00Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20110118-00" />
+<content type="html">&lt;p&gt;Before heading back to graduate school, my brother worked full-time as
+a personal fitness and strength trainer. Like many trainers, he
+started out in an established gym and then struck out on his own once
+he had established an clientele base. Working on his own, he got
+almost all of his new business from referrals.&lt;&#x2F;p&gt;
+&lt;p&gt;Although one might think that a trainer&#x27;s trusted long-term clients
+would be the source of most new business, it was mostly the newer,
+less established clients who referred new trainees. The established
+clients had already referred everyone in their social network that
+might be interested.&lt;&#x2F;p&gt;
+&lt;p&gt;That&#x27;s how I learned about the weak ties of strength.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">When Free Software Isn&#x27;t Better
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2010/12/12/20101212-00</id>
+<updated>2010-12-12T14:56:56Z</updated>
+<published>2010-12-12T14:56:56Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20101212-00" />
+<content type="html">&lt;p&gt;I have an essay in the latest &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;fsf.org&quot;&gt;Free Software Foundation&#x27;s&lt;&#x2F;a&gt; bulletin
+which FSF members should be receiving this week. I&#x27;ve also republished
+the article on my website as &lt;a class=&quot;reference external&quot; href=&quot;&#x2F;writing&#x2F;hill-when_free_software_isnt_better.html&quot;&gt;When Free Software Isn&#x27;t Better&lt;&#x2F;a&gt;.  The
+article confronts the fact that free software is sometimes not as high
+quality or featureful as proprietary alternatives and that most free
+software projects aren&#x27;t particularly collaborative. It reflects on
+what these facts mean for free software and for open source.&lt;&#x2F;p&gt;
+&lt;p&gt;The Bulletin goes out to all &lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;my.fsf.org&#x2F;associate&#x2F;support_freedom?referrer=3427&quot;&gt;FSF associate members&lt;&#x2F;a&gt;. You should
+&lt;a class=&quot;reference external&quot; href=&quot;https:&#x2F;&#x2F;my.fsf.org&#x2F;associate&#x2F;support_freedom?referrer=3427&quot;&gt;join&lt;&#x2F;a&gt; to get a copy mailed to you in the future -- but mostly you
+should join because doing so supports the work of the foundation.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Doppelgänger
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2010/11/28/20101128-00</id>
+<updated>2010-11-28T23:15:54Z</updated>
+<published>2010-11-28T23:15:54Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20101128-00" />
+<content type="html">&lt;a class=&quot;reference external image-reference&quot; href=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;food_network_mako.png&quot;&gt;&lt;img alt=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;food_network_mako-small.png&quot; src=&quot;&#x2F;copyrighteous&#x2F;images&#x2F;food_network_mako-small.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;p&gt;It&#x27;s funny, I don&#x27;t remember donning a cape and making an apperance on
+the food network.&lt;&#x2F;p&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Between the Bars
+</title>
+<category term="" />
+<id>http://mako.cc/copyrighteous/2010/11/14/20101114-00</id>
+<updated>2010-11-15T02:41:24Z</updated>
+<published>2010-11-15T02:41:24Z</published>
+<link rel="alternate" type="text/html" href="http://mako.cc/copyrighteous/20101114-00" />
+<content type="html">&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;&#x2F;copyrighteous&#x2F;20091201-00&quot;&gt;Almost a year ago&lt;&#x2F;a&gt;, I blogged about &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;betweenthebars.org&#x2F;blogs&quot;&gt;Between the Bars&lt;&#x2F;a&gt; -- a
+project that offers a blogging platform to the 1% of the United
+States population that is currently incarcerated. The &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;betweenthebars.org&#x2F;about&quot;&gt;way it works&lt;&#x2F;a&gt;
+is pretty simple: prisoners send letters through the postal mail. We
+scan them and put them up on the web. Visitors can transcribe letters
+or leave comments which are mailed back to the authors.&lt;&#x2F;p&gt;
+&lt;p&gt;About a month ago, my collaborator &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;tirl.org&#x2F;&quot;&gt;Charlie DeTar&lt;&#x2F;a&gt; and I finally
+finished planning and paperwork and opened the site to bloggers. Over
+the last few weeks, we&#x27;ve had a bunch of authors sign up. We now have
+a &lt;a class=&quot;reference external&quot; href=&quot;http:&#x2F;&#x2F;betweenthebars.org&#x2F;blogs&quot;&gt;daily stream of blog posts&lt;&#x2F;a&gt; going up on the site.&lt;&#x2F;p&gt;
+&lt;p&gt;Please visit the site. Leave comments. Transcribe posts. If you know
+of prisoners who might like to use the site, let them know. If you
+want postcard fliers to send to prisoners, &lt;a class=&quot;reference external&quot; href=&quot;mailto:info&amp;#64;betweenthebars.org&quot;&gt;let us know&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+</entry>
+</feed>

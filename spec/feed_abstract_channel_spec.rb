@@ -17,6 +17,7 @@ module FeedAbstract
       it { @delicious.channel.should respond_to att}
       it { @zotero.channel.should respond_to att}
       it { @feedburner.channel.should respond_to att}
+      it { @pyblosxom.channel.should respond_to att}
 
       it { @docatom.channel.send(att).should_not == false}
       it { @kpgatom.channel.send(att).should_not == false}
@@ -26,6 +27,7 @@ module FeedAbstract
       it { @delicious.channel.send(att).should_not == false}
       it { @zotero.channel.send(att).should_not == false}
       it { @feedburner.channel.send(att).should_not == false}
+      it { @pyblosxom.channel.send(att).should_not == false}
     end
 
     it "should have the correct title" do
@@ -37,6 +39,7 @@ module FeedAbstract
       @delicious.channel.title.should == 'Delicious/djcp'
       @zotero.channel.title.should == 'Zotero / PROS Paper Group / Items'
       @feedburner.channel.title.should == 'CNN.com'
+      @pyblosxom.channel.title.should == 'Copyrighteous'
     end
 
     it "should have the correct subtitle and description" do
@@ -63,6 +66,9 @@ module FeedAbstract
 
       @feedburner.channel.description.should == 'CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.'
       @feedburner.channel.subtitle.should == 'CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.'
+
+      @pyblosxom.channel.description.should == "\n\n"
+      @pyblosxom.channel.subtitle.should == "\n\n"
     end
 
     it "should have the correct link" do
@@ -74,6 +80,7 @@ module FeedAbstract
       @delicious.channel.link.should == 'http://www.delicious.com/djcp'
       @zotero.channel.link.should == 'https://api.zotero.org/groups/52650/items'
       @feedburner.channel.link.should == 'http://www.cnn.com/?eref=rss_topstories'
+      @pyblosxom.channel.link.should == 'http://mako.cc/copyrighteous'
     end
 
     it "should have the correct generator" do
@@ -85,6 +92,7 @@ module FeedAbstract
       @delicious.channel.generator.should == 'Delicious'
       @zotero.channel.generator.should == 'Zotero'
       @feedburner.channel.generator.should == ''
+      @pyblosxom.channel.generator.should == "\nPyBlosxom http://pyblosxom.sourceforge.net/ 1.5rc2 20100803\n"
     end
 
     it "should have the correct language" do
@@ -96,6 +104,7 @@ module FeedAbstract
       @delicious.channel.language.should == ''
       @zotero.channel.language.should == ''
       @feedburner.channel.language.should == 'en-us'
+      @pyblosxom.channel.language.should == 'en'
     end
 
     it "should have the correct authors" do
@@ -107,6 +116,7 @@ module FeedAbstract
       @delicious.channel.authors.should == []
       @zotero.channel.authors.should == []
       @feedburner.channel.authors.should == []
+      @pyblosxom.channel.authors.should == ['Benjamin Mako Hill']
 
       @docatom.channel.author.should == 'Doc Searls'
       @kpgatom.channel.author.should == 'Nick Pappas'
@@ -116,6 +126,7 @@ module FeedAbstract
       @delicious.channel.author.should == ''
       @zotero.channel.author.should == ''
       @feedburner.channel.author.should == ''
+      @pyblosxom.channel.author.should == 'Benjamin Mako Hill'
 
     end
 
@@ -128,15 +139,17 @@ module FeedAbstract
       @delicious.channel.categories.should == []
       @zotero.channel.categories.should == []
       @feedburner.channel.categories.should == []
+      @pyblosxom.channel.categories.should == []
       
       @docatom.channel.category.should == ''
       @kpgatom.channel.category.should == 'photos'
-      @djcprss2.channel.category.should == 'Tech, Open Source'
+      @djcprss2.channel.category.should == 'Tech, Open Source, oa.africa, oa.test'
       @djcprss92.channel.category.should == ''
       @oa.channel.category.should == 'oa.africa, oa.test'
       @delicious.channel.category.should == ''
       @zotero.channel.category.should == ''
       @feedburner.channel.category.should == ''
+      @pyblosxom.channel.category.should == ''
     end
 
     it "should have the correct icon" do
@@ -148,6 +161,7 @@ module FeedAbstract
       @delicious.channel.icon.should == ''
       @zotero.channel.icon.should == ''
       @feedburner.channel.icon.should == 'http://i2.cdn.turner.com/cnn/.element/img/1.0/logo/cnn.logo.rss.gif'
+      @pyblosxom.channel.icon.should == ''
     end
 
     it "should have the correct logo" do
@@ -159,6 +173,7 @@ module FeedAbstract
       @delicious.channel.logo.should == ''
       @zotero.channel.logo.should == ''
       @feedburner.channel.logo.should == 'http://i2.cdn.turner.com/cnn/.element/img/1.0/logo/cnn.logo.rss.gif'
+      @pyblosxom.channel.logo.should == ''
     end
 
     it "should have the correct rights" do
@@ -170,6 +185,7 @@ module FeedAbstract
       @delicious.channel.rights.should == ''
       @zotero.channel.rights.should == ''
       @feedburner.channel.rights.should == ' 2011 Cable News Network LP, LLLP.'
+      @pyblosxom.channel.rights.should == 'Creative Commons Attribution-ShareAlike'
     end
 
     it "should have the correct updated value" do
@@ -181,6 +197,7 @@ module FeedAbstract
       @delicious.channel.updated.should == ''
       @zotero.channel.updated.should == Time.parse('2011-09-02T17:16:11Z')
       @feedburner.channel.updated.should == Time.parse('Sat, 03 Sep 2011 16:14:16 EDT')
+      @pyblosxom.channel.updated.should == Time.parse('2011-09-15T05:21:00Z')
     end
 
     it "should have the correct guid" do
@@ -192,6 +209,7 @@ module FeedAbstract
       @delicious.channel.guid.should == 'http://www.delicious.com/djcp'
       @zotero.channel.guid.should == 'http://zotero.org/groups/52650/items'
       @feedburner.channel.guid.should == 'http://www.cnn.com/?eref=rss_topstories'
+      @pyblosxom.channel.guid.should == 'http://mako.cc/copyrighteous/'
     end
   end
 end

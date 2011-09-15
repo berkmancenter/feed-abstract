@@ -15,6 +15,7 @@ module FeedAbstract
     it "should recognize atom feeds properly" do
       @docatom.channel.class.should == Channel::Atom
       @kpgatom.channel.class.should == Channel::Atom
+      @pyblosxom.channel.class.should == Channel::Atom
     end
 
     it "should recognize rss feeds properly" do

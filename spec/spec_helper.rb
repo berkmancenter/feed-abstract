@@ -12,8 +12,9 @@ def instantiate_feeds
   @delicious = FeedAbstract::Feed.new(File.open('spec/test_data/djcp_delicious.rss'))
   @zotero = FeedAbstract::Feed.new(File.open('spec/test_data/zotero.rss'))
   @feedburner = FeedAbstract::Feed.new(File.open('spec/test_data/feedburner.rss'))
+  @pyblosxom = FeedAbstract::Feed.new(File.open('spec/test_data/pyblosxom.atom'))
   
-  @all_feeds = [@docatom, @kpgatom, @djcprss2, @djcprss92, @oa, @delicious, @zotero, @feedburner]
+  @all_feeds = [@docatom, @kpgatom, @djcprss2, @djcprss92, @oa, @delicious, @zotero, @feedburner,@pyblosxom]
 end
 
 def instantiate_example_items
@@ -24,4 +25,5 @@ def instantiate_example_items
   @deliciousitem = @delicious.items.first
   @zoteroitem = @zotero.items.first
   @feedburneritem = @feedburner.items.first
+  @pyblosxomitem = @pyblosxom.items.first
 end

@@ -33,7 +33,7 @@ module FeedAbstract
 
       # The author list (a merge of the RSS author and dc:creator elements) as an array.
       def authors
-        [@item.author, @item.dc_creators.collect{|c| c.content}].flatten.uniq.compact
+        [@item.author, @item.dc_creators.collect{|c| c.content}].flatten.uniq.compact.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
       # The author list as a string, joined with a comma.
@@ -43,7 +43,7 @@ module FeedAbstract
 
       # The contributors (parsed from the dc:contributor element) as an array.
       def contributors
-        (@item.dc_contributors.empty?) ? [] : @item.dc_contributors
+        (@item.dc_contributors.empty?) ? [] : @item.dc_contributors.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
       # The contributor list as a string joined with a comma.
@@ -54,7 +54,7 @@ module FeedAbstract
       # The category list as an array.
       def categories
         return [] if @item.categories.empty?
-        @item.categories.collect{|c| c.content}
+        @item.categories.collect{|c| c.content}.reject{|c| c == '' || c.match(/^\s+$/)}
       end
 
       # The category list as a string, joined with a comma.

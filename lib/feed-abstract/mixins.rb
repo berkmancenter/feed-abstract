@@ -38,7 +38,7 @@ module FeedAbstractMixins
     # An array of author names
     def authors
       return [] if @source.authors.empty?
-      @source.authors.collect{|au| au.name.content}
+      @source.authors.collect{|au| au.name.content}.reject{|au| au == '' || au.match(/^\s+$/)}
     end
 
     # The authors list as a string, joined with a comma.
@@ -50,7 +50,7 @@ module FeedAbstractMixins
     # The categories list as an array.
     def categories
       return [] if @source.categories.empty?
-      @source.categories.collect{|c| c.term}
+      @source.categories.collect{|c| c.term}.reject{|c| c == '' || c.match(/^\s+$/)}
     end
 
     # The categories list as a string joined with a comma.

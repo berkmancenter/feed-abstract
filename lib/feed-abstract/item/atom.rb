@@ -23,7 +23,7 @@ module FeedAbstract
       # The contributor list as an array.
       def contributors
         return [] if @item.contributors.empty?
-        @item.contributors.collect{|c| c.name.content}
+        @item.contributors.reject{|con| con.name.content == '' || con.name.content.match(/^\s+$/)}.collect{|c| c.name.content}
       end
 
       #The contributor list as a string joined with a comma.

@@ -12,7 +12,7 @@ module FeedAbstract
       # The authors list as an array.
       def authors
         return [] if @feed.channel.dc_publishers.empty?
-        @feed.channel.dc_publishers
+        @feed.channel.dc_publishers.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
       # The authors list as a string, joined with a comma. 
@@ -33,7 +33,7 @@ module FeedAbstract
       # The category list as an array.
       def categories
         return [] if @feed.channel.dc_subjects.empty?
-        @feed.channel.dc_subjects.collect{|c| c.content}
+        @feed.channel.dc_subjects.collect{|c| c.content}.reject{|c| c == '' || c.match(/^\s+$/)}
       end
 
       # The category list as a string, joined with a comma.
