@@ -26,6 +26,7 @@ module FeedAbstract
 
     it "should recognize rdf feeds properly" do
       @oa.channel.class.should == Channel::RDF
+      @chill.channel.class.should == Channel::RDF
     end
 
     it "should have items" do
