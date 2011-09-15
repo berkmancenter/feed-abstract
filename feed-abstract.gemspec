@@ -46,6 +46,7 @@ Gem::Specification.new do |s|
     "spec/test_data/feedburner.rss",
     "spec/test_data/katanapg.atom",
     "spec/test_data/oa.africa.rss",
+    "spec/test_data/pyblosxom.atom",
     "spec/test_data/zotero.rss"
   ]
   s.homepage = "https://github.com/berkmancenter/feed-abstract"
@@ -66,8 +67,10 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
     else
       s.add_dependency(%q<feed-abstract>, [">= 0"])
+      s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
@@ -78,6 +81,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<feed-abstract>, [">= 0"])
+    s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
