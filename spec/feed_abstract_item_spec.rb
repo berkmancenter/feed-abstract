@@ -31,6 +31,7 @@ module FeedAbstract
       @zoteroitem.title.should == 'An experimental application of the Delphi method to the use of experts'
       @feedburneritem.title.should == 'Did Libya help CIA with renditions of terror suspects?'
       @pyblosxomitem.title.should == "Anxiety\n"
+      @chillitem.title.should == "Takedown Complaints in the Android Marketplace"
 
     end
 

@@ -12,7 +12,7 @@ module FeedAbstract
       # The authors list as an array.
       def authors
         return [] if @feed.channel.dc_publishers.empty?
-        @feed.channel.dc_publishers.reject{|au| au == '' || au.match(/^\s+$/)}
+        @feed.channel.dc_publishers.collect{|dcp| dcp.content}.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
       # The authors list as a string, joined with a comma. 

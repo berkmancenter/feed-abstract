@@ -33,7 +33,7 @@ module FeedAbstract
 
       # The author list (a merge of the RSS author and dc:creator elements) as an array.
       def authors
-        [@item.author, @item.dc_creators.collect{|c| c.content}].flatten.uniq.compact.reject{|au| au == '' || au.match(/^\s+$/)}
+        [@item.author, ((@item.dc_creators.empty?) ? nil : @item.dc_creators.collect{|c| c.content})].flatten.uniq.compact.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
       # The author list as a string, joined with a comma.
