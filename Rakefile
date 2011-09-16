@@ -19,7 +19,7 @@ begin
     s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
     s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
     s.require_paths = ["lib"]
-    s.add_development_dependency "rspec"
+    s.add_development_dependency("rspec",['>= 0'])
     s.extra_rdoc_files = [
       "README.rdoc"
     ]
@@ -28,3 +28,31 @@ rescue LoadError
   puts "Jeweler, or one of its dependencies, is not available."
 end
 
+Jeweler::RubygemsDotOrgTasks.new
+
+require 'rake/testtask'
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'lib' << 'test'
+  test.pattern = 'test/**/test_*.rb'
+  test.verbose = true
+end
+
+require 'rcov/rcovtask'
+Rcov::RcovTask.new do |test|
+  test.libs << 'test'
+  test.pattern = 'test/**/test_*.rb'
+  test.verbose = true
+  test.rcov_opts << '--exclude "gems/*"'
+end
+
+task :default => :test
+
+require 'rake/rdoctask'
+Rake::RDocTask.new do |rdoc|
+  version = File.exist?('VERSION') ? File.read('VERSION') : ""
+
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title = "footest #{version}"
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
