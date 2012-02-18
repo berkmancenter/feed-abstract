@@ -21,14 +21,3 @@ require 'feed-abstract/item/atom'
 require 'feed-abstract/item/rdf'
 
 require 'feed-abstract/feed'
-
-
-#RSS::Rss::Channel::Item.class_eval{
-#  def foobar
-#    'asdfasdf'
-#  end
-#}
-
-#RSS::Rss::Channel::Item.instance_eval{
-#  install_get_attribute('category', '', false )
-#}

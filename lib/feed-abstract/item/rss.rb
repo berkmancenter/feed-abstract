@@ -5,10 +5,11 @@ module FeedAbstract
     class RSS
 
       include FeedAbstractMixins::RSS
-      attr_reader :item, :source
+      attr_reader :item, :source, :channel
 
-      def initialize(item)
+      def initialize(item,channel)
         @item = @source = item
+        @channel = channel
       end
 
       def title
@@ -33,6 +34,9 @@ module FeedAbstract
 
       # The author list (a merge of the RSS author and dc:creator elements) as an array.
       def authors
+        if self.channel.generator == 'Twitter'
+          return [@item.title.split(':')[0]]
+        end
         [@item.author, ((@item.dc_creators.empty?) ? nil : @item.dc_creators.collect{|c| c.content})].flatten.uniq.compact.reject{|au| au == '' || au.match(/^\s+$/)}
       end
 
@@ -53,13 +57,19 @@ module FeedAbstract
 
       # The category list as an array.
       def categories
+        if self.channel.generator == 'Twitter'
+          return @item.title.scan(/#([^#\s]+)/).flatten
+        end
         return [] if @item.categories.empty?
         @item.categories.collect{|c| c.content}.reject{|c| c == '' || c.match(/^\s+$/)}
       end
 
       # The category list as a string, joined with a comma.
       def category
-        return '' if @item.categories.empty?
+        if self.channel.generator == 'Twitter'
+          return self.categories.join(', ')
+        end
+        return '' if @item.categories.empty? 
         @item.categories.collect{|c| c.content}.join(', ')
       end
 

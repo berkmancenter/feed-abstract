@@ -14,8 +14,9 @@ def instantiate_feeds
   @feedburner = FeedAbstract::Feed.new(File.open('spec/test_data/feedburner.rss'))
   @pyblosxom = FeedAbstract::Feed.new(File.open('spec/test_data/pyblosxom.atom'))
   @chill = FeedAbstract::Feed.new(File.open('spec/test_data/chillingeffects.xml'))
+  @twitter = FeedAbstract::Feed.new(File.open('spec/test_data/djcp_twitter.rss'))
   
-  @all_feeds = [@docatom, @kpgatom, @djcprss2, @djcprss92, @oa, @delicious, @zotero, @feedburner,@pyblosxom,@chill]
+  @all_feeds = [@docatom, @kpgatom, @djcprss2, @djcprss92, @oa, @delicious, @zotero, @feedburner, @pyblosxom, @chill, @twitter]
 end
 
 def instantiate_example_items
@@ -28,4 +29,5 @@ def instantiate_example_items
   @feedburneritem = @feedburner.items.first
   @pyblosxomitem = @pyblosxom.items.first
   @chillitem = @chill.items.first
+  @twitteritem = @twitter.items.first
 end

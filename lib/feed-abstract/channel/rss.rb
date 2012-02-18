@@ -24,12 +24,14 @@ module FeedAbstract
       end
       alias :subtitle :description
 
-      # The generator of this feed as a string. Sometimes a URL, sometimes a string (e.g. the application name).
+      # The generator of this feed as a string. Sometimes a URL, sometimes a string (e.g. the application name). We will "sniff" out the generator for some feed sources - wordpress, delicious, twitter, etc. 
       def generator
         if ! @feed.channel.generator.nil? && @feed.channel.generator.match(/wordpress\.org/i)
           return 'WordPress'
         elsif @feed.channel.link.match(/www\.delicious\.com/i)
           return 'Delicious'
+        elsif @feed.channel.link.match(/https?:\/\/twitter\.com/i)
+          return 'Twitter'
         end
         return '' if @feed.channel.generator.nil?
         @feed.channel.generator

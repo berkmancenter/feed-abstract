@@ -7,11 +7,12 @@ module FeedAbstract
     class Atom < Array
       attr_reader :feed, :items
 
-      def initialize(feed)
+      def initialize(feed,channel)
         @feed = feed
+        @channel = channel
         return [] if @feed.items.empty?
         @feed.items.each do|item|
-          self << ::FeedAbstract::Item::Atom.new(item)
+          self << ::FeedAbstract::Item::Atom.new(item,channel)
         end
       end
 

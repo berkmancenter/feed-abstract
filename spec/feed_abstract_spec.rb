@@ -22,6 +22,7 @@ module FeedAbstract
       @djcprss2.channel.class.should == Channel::RSS
       @djcprss92.channel.class.should == Channel::RSS
       @delicious.channel.class.should == Channel::RSS
+      @twitter.channel.class.should == Channel::RSS
     end
 
     it "should recognize rdf feeds properly" do

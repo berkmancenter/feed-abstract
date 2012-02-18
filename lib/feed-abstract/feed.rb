@@ -97,13 +97,13 @@ module FeedAbstract
     def negotiate_channel_class
       if @raw_feed.class == RSS::Atom::Feed
         @channel = Channel::Atom.new(@raw_feed)
-        @items = Items::Atom.new(@raw_feed)
+        @items = Items::Atom.new(@raw_feed,@channel)
       elsif @raw_feed.class == RSS::RDF
         @channel = Channel::RDF.new(@raw_feed)
-        @items = Items::RDF.new(@raw_feed)
+        @items = Items::RDF.new(@raw_feed,@channel)
       else
         @channel = Channel::RSS.new(@raw_feed)
-        @items = Items::RSS.new(@raw_feed)
+        @items = Items::RSS.new(@raw_feed,@channel)
       end
     end
 

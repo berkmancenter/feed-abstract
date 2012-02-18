@@ -8,10 +8,11 @@ module FeedAbstract
     # See FeedAbstractMixins::Atom for more instance methods.
     class Atom
       include FeedAbstractMixins::Atom
-      attr_reader :item, :source
+      attr_reader :item, :source, :channel
 
-      def initialize(item)
+      def initialize(item,channel)
         @item = @source = item
+        @channel = channel
       end
 
       # The full content of the item, most likely html.

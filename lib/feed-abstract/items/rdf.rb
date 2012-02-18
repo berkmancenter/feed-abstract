@@ -5,11 +5,12 @@ module FeedAbstract
     class RDF < Array
       attr_reader :feed, :items
 
-      def initialize(feed)
+      def initialize(feed,channel)
         @feed = feed
+        @channel = channel
         return [] if @feed.items.empty?
         @feed.items.each do|item|
-          self << ::FeedAbstract::Item::RDF.new(item)
+          self << ::FeedAbstract::Item::RDF.new(item,channel)
         end
       end
 
