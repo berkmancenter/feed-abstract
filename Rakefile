@@ -20,6 +20,7 @@ begin
     s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
     s.require_paths = ["lib"]
     s.add_development_dependency("rspec",['>= 0'])
+    s.add_development_dependency("simplecov",['>= 0'])
     s.extra_rdoc_files = [
       "README.rdoc"
     ]
@@ -29,23 +30,6 @@ rescue LoadError
 end
 
 Jeweler::RubygemsDotOrgTasks.new
-
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
-
-task :default => :test
 
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
