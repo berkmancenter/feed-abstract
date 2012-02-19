@@ -3,3 +3,4 @@ pkg/*
 .bundle
 Gemfile.lock
 *.swp
+.rvmrc
