@@ -1,4 +1,9 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in feed-abstract.gemspec
-gemspec
+group :development do
+  gem "rspec"
+  gem "rdoc"
+  gem "bundler"
+  gem "jeweler"
+  gem "simplecov"
+end
