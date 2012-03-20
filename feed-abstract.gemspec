@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "feed-abstract"
-  s.version = "0.0.10"
+  s.version = "0.0.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Daniel Collis-Puro"]
-  s.date = "2012-02-19"
+  s.date = "2012-03-20"
   s.description = "This library creates a common object graph for the RSS/Atom/RDF parsing classes in the ruby standard library. This allows you parse different feed formats and get back the same (or at least a very similar) set of results - item authors are accessible under an \"author(s)\" attribute, categories/tags/subjects are accessible under \"category(ies)\" attributes, etc. We do our best to make sure the data makes sense, too - RSS items lack an \"updated\" attribute, so we use \"pubDate\" to populate it. "
   s.email = ["djcp@cyber.law.harvard.edu"]
   s.extra_rdoc_files = [
@@ -49,6 +49,7 @@ Gem::Specification.new do |s|
     "spec/test_data/katanapg.atom",
     "spec/test_data/oa.africa.rss",
     "spec/test_data/pyblosxom.atom",
+    "spec/test_data/twitter_hashtag.atom",
     "spec/test_data/zotero.rss"
   ]
   s.homepage = "https://github.com/berkmancenter/feed-abstract"
