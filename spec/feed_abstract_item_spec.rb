@@ -33,6 +33,7 @@ module FeedAbstract
       @pyblosxomitem.title.should == "Anxiety\n"
       @chillitem.title.should == "Takedown Complaints in the Android Marketplace"
       @twitteritem.title.should == "djcp: @csoghoian @BrookingsInst and the clipboard as well, presumably. #security #keylogging"
+      @twitteratomitem.title.should == "Senior #Ruby on #Rails developer(s) http://t.co/rvqsIK0h #jobs"
 
     end
 
@@ -53,6 +54,7 @@ module FeedAbstract
       @chillitem.summary.should == %Q$<br>\n<img src=\"//images.chillingeffects.org/thermometer.gif\" alt=\"thermometer\" width=\"35\" height=\"120\"align=left> <h2>Takedown Complaints in the Android Marketplace</h2><p>Wendy Seltzer, <i>Chilling Effects Clearinghouse</i>,  March  3, 2011\n<p><i>Abstract:</i> Earlier this year, Google began sending to Chilling Effects the requests it received for takedown from the Android Marketplace. Since this represents a new source of data, we take a look at the first month's input, February 2011.<hr size=1>\n<p><hr size=1 width=\"75%\"><p>Since Apple launched its iPhone App Store, applications marketplaces have popped up with increasing prominence.  Google, unlike Apple<a href=\"#note1\" name=\"back\">*</a>, does not lock Android users into purchasing from its <a href=\"https://market.android.com/\">Android Market</a>, but it does make that marketplace a convenient place to find Android applications (<a href=\"http://mashable.com/2010/10/25/android-100000-apps/\">passing 100,000 apps</a> late last year).  <br><p><br>In February, Chilling Effects <a href=\"https://www.chillingeffects.org/search.cgi?search=Android\">saw</a> 206 complaints to Google regarding Android Market apps, almost evenly split between trademark and copyright.<a href=\"#note2\" name=\"back2\">*</a> Because the Android Market offers commercial transactions, its context differs somewhat from the search and blog hosting in which DMCA -- copyright -- complaints predominate. At the same time, many apps are offered free of charge.<p><br><img src=\"https://chart.googleapis.com/chart?cht=pc&chtt=Complaint+Subjects+to+Android+Market+(Feb+2011)&chs=750x400&chd=t:111,97,3|0.59,0.31,0.05,0.03,0.02,0.02,0.02,0.38,0.11,0.1,0.07,0.03,0.03,0.02,0.02,0.02,0.01,0.01,0.22&chl=[TM]|[C]||Trademark%20%20(59)|Facebook%20Trademark%20%20(31)|Bank%20Trademark%20%20(5)|SXSW%20Trademark%20%20(3)|Trademarks%20and%20Videos%20Copyright%20%20(2)|Game%20Trademark%20%20(2)|Disney%20Trademark%20and%20Copyright%20%20(2)|Game%20Copyright%20%20(38)|Software%20Copyright%20%20(11)|Logo%20Copyright%20%20(10)|Copyright%20%20(7)|Books%20Copyright%20%20(3)|Images%20Copyright%20%20(3)|Articles%20Copyright%20%20(2)|Television%20Copyright%20%20(2)|UFC%20Copyright%20%20(2)|Photo%20Copyright%20%20(1)|Website%20Copyright%20%20(1)|Other/Unidentified%20(22)&chco=0000FF,003333&chp=3.14\" title=\"Complaint Subjects to Google's Android Market, Feb. 2011\"><p>Slightly more than half of the complaints here claim trademark infringement: misleading use of a mark (word or logo) to cause consumer confusion about the application's source or sponsorship.  Facebook led the way, challenging 30+ apps that borrowed its name or \"f\" logo (e.g. <a href=\"/trademark/notice.cgi?NoticeID=56735\">Facebook Trademark Complaint to Google: Android Market</a>).  Banks and financial institutions challenged applications that used their logos, even to offer a mobile version of the bank's own site. Here is trademark as the law of consumer protection: you want to be sure an unauthorized Wells Fargo application won't channel your deposit into its coffers rather than your savings account.  Google even filed several complaints against apps in its marketplace that were a bit too free with the Google name. Starbucks used copyright in its logo to similar end, requesting takedown or alteration of apps that used the coffee company's logo as their icon (e.g. <a href=\"/dmca512c/notice.cgi?NoticeID=60149\">Logo DMCA (Copyright) Complaint to Google: Android Market</a>). Some, including <a href=\"https://market.android.com/details?id=com.birbeck.starbuckscard\">My Coffee Card</a> (formerly Starbucks Card Widget) changed their name and icon in response.<p>Sometimes, these complaints didn't do much to allege \"likelihood of consumer confusion,\" the traditional hallmark of trademark infringement.  South By SouthWest's complaint against the \"Unauthorized SXSW\" party scheduler app -- <a href=\"/trademark/notice.cgi?NoticeID=60951\">SXSW Trademark Complaint to Google: Android Market</a> -- sounds like an overstep, into nominative fair use. There's no good alternative way to refer to the big conference/music festival in Austin later in March, and \"unauthorized\" plainly indicates it's not an officially endorsed product. (Neither Unofficial SXSW nor the official \"SXSW&reg; GO\" gets particularly high marks from reviewers yet, but that may be because the event hasn't yet kicked off to fill them with data.)<p>Another 82 complaints (less 11 \"logo\" complaints) alleged copyright infringement -- copying of code, of graphical elements or \"look and feel\" (Nintendo complained about many \"Super Mario\" derivatives), of characters (Columbia's \"Qbert\"), or of audiovisual elements including video clips, wallpapers, and eBooks. Most of these were phrased in DMCA terms, since like a blog platform, the marketplace hosts \"information residing on systems or networks at direction of users\" <a href=\"http://static.chillingeffects.org/512.html#c\">512(c)</a>. <p>Unique among the copyright complaints in its indirection, the RIAA filed three complaints naming dozens of apps that allegedly \"facilitate the unauthorized streaming and downloading of popular sound recordings, the vast majority of which are owned or controlled by RIAA members.\"  Its <a href=\"/dmca512c/notice.cgi?NoticeID=61677\">complaints</a>, complete with screenshots, asked for the removal of apps for ringtone creation and MP3 listening.  This is an attenuated claim.  RIAA isn't alleging that Google, or even the apps, are direct infringers of member copyrights. Rather, it claims that because Google hosts apps (or in some cases, serves ads inside them) that enable end-users to make infringing copies of music, Google should be held responsible for the users' infringing conduct -- a sort of once-removed contributory or vicarious liability claim. Is there a law of contributory inducement, after <a href=\"http://w2.eff.org/IP/P2P/MGM_v_Grokster/\">Grokster</a>?  <p><br>I haven't followed all of the URLs to see how Google has responded to each of these complaints, but to its credit, it does not appear to have pulled the \"Unauthorized SXSW,\" for example.  Others accused of trademark infringement appear to have changed their names or logos. Because the <a href=\"https://www.chillingeffects.org/dmca512/faq\">DMCA</a> applies only to copyright, not trademark, there is less settled procedure around the trademark claims.  There's no safe-harbor, but neither is there an assumption that the service provider will be liable for its users' activity (see <a href=\"http://www.eff.org/deeplinks/2010/04/tiffany-v-ebay-what-about-put-back\">Tiffany v. eBay</a>, where the Second Circuit Court of Appeals held that \"for contributory trademark infringement liability to lie, a service provider must have more than a general knowledge or reason to know that its service is being used to sell counterfeit goods.\"). <p><br><img src=\"https://chart.googleapis.com/chart?cht=p&chtt=Complaint+Senders+to+Android+Market+(Feb+2011)&chs=750x400&chd=t:0.3,0.2,0.08,0.06,0.04,0.03,0.03,0.03,0.03,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,1.09&chl=Facebook,%20Inc.%20(30)|Nintendo%20of%20America%20Inc.%20(20)|Google%20Inc.%20(8)|Starbucks%20Corporation%20(6)|Hatched%20Games%20(4)|RIAA%20(3)|Photo%20Hunt%20(3)|Atari,%20Inc.%20(3)|ESPN%20Inc.%20(3)|Playboy%20Enterprises%20International,%20Inc.%20(2)|Electronic%20Arts%20Inc.%20(2)|The%20Walt%20Disney%20Company%20(2)|Monotype%20Imaging%20Inc.%20(2)|Kodansha%20Ltd.%20(2)|Metro,%20a%20division%20of%20Associated%20Newspapers%20Limited%20(2)|Dorna%20Sports%20(2)|Justin.tv,%20Inc.%20(2)|Rocket%20Radar%20(2)|eBay%20Inc.%20(2)|Promevo,%20LLC%20(2)|Other/Unidentified%20(109)&chco=0000FF&chp=3.14\" title=\"Takedown Senders\"><p><a name=\"note1\" href=\"#back\">*</a> Copyright geeks will recall that the last <a href=\"http://www.loc.gov/today/pr/2010/10-169.html\">anticircumvention rulemaking</a> exempted phone jailbreaking from the circumvention rule, so iPhone owners can confidently unlock their phones to use the <a href=\"http://cydia.saurik.com/\">cydia</a> marketplace or others.<br><a name=\"note2\" href=\"#back2\">*</a> Note that this is a simple count of distinct complaint submissions, each of which may target one or multiple allegedly infringing applications. $
 
       @twitteritem.summary.should == "djcp: @csoghoian @BrookingsInst and the clipboard as well, presumably. #security #keylogging"
+      @twitteratomitem.summary.should == 'Senior #Ruby on #Rails developer(s) http://t.co/rvqsIK0h #jobs'
     end
 
     it "should have the correct content" do 
@@ -105,6 +107,7 @@ module FeedAbstract
       @pyblosxomitem.content.should == %Q|<div><a href='http://www.flickr.com/photos/nffcnnr/401047557/' target='_blank'><img src='http://farm1.static.flickr.com/137/401047557_1dda26e16f.jpg' width=350 alt='MailBoxes by nffcnnr, on Flickr' title='MailBoxes by nffcnnr, on Flickr' border='0'/></a><br/><a href='http://creativecommons.org/licenses/by/2.0/' target='_blank'><img src='http://i.creativecommons.org/l/by/2.0/80x15.png' alt='Creative Commons Attribution 2.0 Generic License' title='Creative Commons Attribution 2.0 Generic License' border='0' align='left'></a>&nbsp;&nbsp;by&nbsp;<a href='http://www.flickr.com/people/nffcnnr/' target='_blank'>&nbsp;nffcnnr</a><a href='http://www.imagecodr.org/' target='_blank'>&nbsp;</a></div><p>I am haunted by the nagging fear that I have mailboxes, tucked into a\ndark corner of an office somewhere, and perhaps even full of checks\nand important documents, that I don't know exist.</p>\n|
       @chillitem.content.should == ''
       @twitteritem.content.should == ""
+      @twitteratomitem.content.should == %Q|Senior <a href="http://search.twitter.com/search?q=%23Ruby" title="#Ruby" class=" ">#Ruby</a> on <em><a href="http://search.twitter.com/search?q=%23Rails" title="#Rails" class=" ">#Rails</a></em> developer(s) <a href="http://t.co/rvqsIK0h">http://t.co/rvqsIK0h</a> <a href="http://search.twitter.com/search?q=%23jobs" title="#jobs" class=" ">#jobs</a>|
     end
 
     it "should have the correct link" do
@@ -118,6 +121,7 @@ module FeedAbstract
       @pyblosxomitem.link.should == 'http://mako.cc/copyrighteous/20110913-00'
       @chillitem.link.should == 'https://www.chillingeffects.org/weather.cgi?WeatherID=648'
       @twitteritem.link.should == 'http://twitter.com/djcp/statuses/168381896559046656'
+      @twitteratomitem.link.should == 'http://twitter.com/pelaphptutor/statuses/181861618911690752'
     end
 
     it "should have the correct author" do
@@ -131,6 +135,7 @@ module FeedAbstract
       @pyblosxomitem.author.should == ''
       @chillitem.author.should == ''
       @twitteritem.author.should == 'djcp'
+      @twitteratomitem.author.should == 'pelaphptutor'
     end
     
     it "should have the correct authors" do
@@ -144,6 +149,7 @@ module FeedAbstract
       @pyblosxomitem.authors.should == []
       @chillitem.authors.should == []
       @twitteritem.authors.should == ['djcp']
+      @twitteratomitem.authors.should == ['pelaphptutor']
     end
 
     it "should have the correct contributor" do
@@ -157,6 +163,7 @@ module FeedAbstract
       @pyblosxomitem.contributor.should == ''
       @chillitem.contributor.should == ''
       @twitteritem.contributor.should == ''
+      @twitteratomitem.contributor.should == ''
     end
     
     it "should have the correct contributors" do
@@ -170,6 +177,7 @@ module FeedAbstract
       @pyblosxomitem.contributors.should == []
       @chillitem.contributors.should == []
       @twitteritem.contributors.should == []
+      @twitteratomitem.contributors.should == []
     end
 
     it "should have the correct category" do
@@ -183,6 +191,7 @@ module FeedAbstract
       @pyblosxomitem.category.should == ''
       @chillitem.category.should == ''
       @twitteritem.category.should == 'security, keylogging'
+      @twitteratomitem.category.should == 'Ruby, Rails, jobs'
     end
 
     it "should have the correct categories" do
@@ -196,6 +205,7 @@ module FeedAbstract
       @pyblosxomitem.categories.should == []
       @chillitem.categories.should == []
       @twitteritem.categories.should == ['security', 'keylogging']
+      @twitteratomitem.categories.should == ['Ruby', 'Rails', 'jobs']
     end
 
     it "should have the correct rights" do
@@ -209,6 +219,7 @@ module FeedAbstract
       @pyblosxomitem.rights.should == ''
       @chillitem.rights.should == ''
       @twitteritem.rights.should == ''
+      @twitteratomitem.rights.should == ''
     end
 
     it "should have been updated at the correct time" do
@@ -222,6 +233,7 @@ module FeedAbstract
       @pyblosxomitem.updated.should == Time.parse('2011-09-15T05:21:00Z')
       @chillitem.updated.should == ""
       @twitteritem.updated.should == Time.parse('2012-02-11 12:12:27 -0500')
+      @twitteratomitem.updated.should == Time.parse('2012-03-19 21:56:03 UTC')
     end
 
     it "should have been published at the proper time" do
@@ -235,6 +247,7 @@ module FeedAbstract
       @pyblosxomitem.published.should == Time.parse('2011-09-15T05:21:00Z')
       @chillitem.published.should == ''
       @twitteritem.published.should == Time.parse('2012-02-11 12:12:27 -0500')
+      @twitteratomitem.published.should == Time.parse('2012-03-19 21:56:03 UTC')
     end
 
     it "should have the proper guid" do
@@ -248,6 +261,7 @@ module FeedAbstract
       @pyblosxomitem.guid.should == 'http://mako.cc/copyrighteous/2011/09/15/20110913-00'
       @chillitem.guid.should == 'https://www.chillingeffects.org/weather.cgi?WeatherID=648'
       @twitteritem.guid.should == 'http://twitter.com/djcp/statuses/168381896559046656'
+      @twitteratomitem.guid.should == 'tag:search.twitter.com,2005:181861618911690752'
     end
 
   end

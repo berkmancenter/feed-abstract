@@ -30,6 +30,10 @@ module FeedAbstract
       def generator
         if self.link.match(/zotero\.org/)
           return 'Zotero'
+        elsif self.link.match(/wordpress\.com/)
+          return 'WordPress'
+        elsif self.link.match(/https?:\/\/.*\.?twitter\.com/i)
+          return 'Twitter'
         end
         return '' if @feed.generator.nil?
         @feed.generator.content

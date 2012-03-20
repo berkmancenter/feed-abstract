@@ -34,6 +34,9 @@ module FeedAbstract
       end
 
       def summary
+        if self.channel.generator == 'Twitter'
+          return self.title
+        end
         return '' if @item.summary.nil?
         @item.summary.content
       end

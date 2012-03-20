@@ -20,6 +20,7 @@ module FeedAbstract
       it { @pyblosxom.channel.should respond_to att}
       it { @chill.channel.should respond_to att}
       it { @twitter.channel.should respond_to att}
+      it { @twitter_atom.channel.should respond_to att}
 
       it { @docatom.channel.send(att).should_not == false}
       it { @kpgatom.channel.send(att).should_not == false}
@@ -32,6 +33,7 @@ module FeedAbstract
       it { @pyblosxom.channel.send(att).should_not == false}
       it { @chill.channel.send(att).should_not == false}
       it { @twitter.channel.send(att).should_not == false}
+      it { @twitter_atom.channel.send(att).should_not == false}
     end
 
     it "should have the correct title" do
@@ -46,6 +48,7 @@ module FeedAbstract
       @pyblosxom.channel.title.should == 'Copyrighteous'
       @chill.channel.title.should == 'Chilling Effects Clearinghouse Weather Reports'
       @twitter.channel.title.should == 'Twitter / djcp'
+      @twitter_atom.channel.title.should == '#rails - Twitter Search'
     end
 
     it "should have the correct subtitle and description" do
@@ -81,6 +84,9 @@ module FeedAbstract
 
       @twitter.channel.description.should == 'Twitter updates from Daniel Collis Puro / djcp.'
       @twitter.channel.subtitle.should == 'Twitter updates from Daniel Collis Puro / djcp.'
+
+      @twitter_atom.channel.description.should == ''
+      @twitter_atom.channel.subtitle.should == ''
     end
 
     it "should have the correct link" do
@@ -95,6 +101,7 @@ module FeedAbstract
       @pyblosxom.channel.link.should == 'http://mako.cc/copyrighteous'
       @chill.channel.link.should == 'http://www.chillingeffects.org'
       @twitter.channel.link.should == 'http://twitter.com/djcp'
+      @twitter_atom.channel.link.should == 'http://search.twitter.com/search?q=%23rails'
     end
 
     it "should have the correct generator" do
@@ -109,6 +116,7 @@ module FeedAbstract
       @pyblosxom.channel.generator.should == "\nPyBlosxom http://pyblosxom.sourceforge.net/ 1.5rc2 20100803\n"
       @chill.channel.generator.should == ''
       @twitter.channel.generator.should == 'Twitter'
+      @twitter_atom.channel.generator.should == 'Twitter'
     end
 
     it "should have the correct language" do
@@ -123,6 +131,7 @@ module FeedAbstract
       @pyblosxom.channel.language.should == 'en'
       @chill.channel.language.should == 'en-us'
       @twitter.channel.language.should == 'en-us'
+      @twitter_atom.channel.language.should == 'en-US'
     end
 
     it "should have the correct authors" do
@@ -137,6 +146,7 @@ module FeedAbstract
       @pyblosxom.channel.authors.should == ['Benjamin Mako Hill']
       @chill.channel.authors.should == ['Wendy Seltzer, wseltzer@chillingeffects.org']
       @twitter.channel.authors.should == []
+      @twitter_atom.channel.authors.should == []
 
       @docatom.channel.author.should == 'Doc Searls'
       @kpgatom.channel.author.should == 'Nick Pappas'
@@ -149,6 +159,7 @@ module FeedAbstract
       @pyblosxom.channel.author.should == 'Benjamin Mako Hill'
       @chill.channel.author.should == 'Wendy Seltzer, wseltzer@chillingeffects.org'
       @twitter.channel.author.should == ''
+      @twitter_atom.channel.author.should == ''
 
     end
 
@@ -164,6 +175,7 @@ module FeedAbstract
       @pyblosxom.channel.categories.should == []
       @chill.channel.categories.should == ['Your rights online']
       @twitter.channel.categories.should == []
+      @twitter_atom.channel.categories.should == []
       
       @docatom.channel.category.should == ''
       @kpgatom.channel.category.should == 'photos'
@@ -176,6 +188,7 @@ module FeedAbstract
       @pyblosxom.channel.category.should == ''
       @chill.channel.category.should == 'Your rights online'
       @twitter.channel.category.should == ''
+      @twitter_atom.channel.category.should == ''
     end
 
     it "should have the correct icon" do
@@ -190,6 +203,7 @@ module FeedAbstract
       @pyblosxom.channel.icon.should == ''
       @chill.channel.icon.should == 'http://images.chillingeffects.org/chilling_effects.gif'
       @twitter.channel.icon.should == ''
+      @twitter_atom.channel.icon.should == ''
     end
 
     it "should have the correct logo" do
@@ -204,6 +218,7 @@ module FeedAbstract
       @pyblosxom.channel.logo.should == ''
       @chill.channel.logo.should == 'http://images.chillingeffects.org/chilling_effects.gif'
       @twitter.channel.logo.should == ''
+      @twitter_atom.channel.logo.should == ''
     end
 
     it "should have the correct rights" do
@@ -218,6 +233,7 @@ module FeedAbstract
       @pyblosxom.channel.rights.should == 'Creative Commons Attribution-ShareAlike'
       @chill.channel.rights.should == ''
       @twitter.channel.rights.should == ''
+      @twitter_atom.channel.rights.should == ''
     end
 
     it "should have the correct updated value" do
@@ -232,6 +248,7 @@ module FeedAbstract
       @pyblosxom.channel.updated.should == Time.parse('2011-09-15T05:21:00Z')
       @chill.channel.updated.should == Time.parse('2002-02-25T12:00+00:00')
       @twitter.channel.updated.should == ''
+      @twitter_atom.channel.updated.should == Time.parse('2012-03-19 21:56:03 UTC')
     end
 
     it "should have the correct guid" do
@@ -246,6 +263,7 @@ module FeedAbstract
       @pyblosxom.channel.guid.should == 'http://mako.cc/copyrighteous/'
       @chill.channel.guid.should == 'http://www.chillingeffects.org'
       @twitter.channel.guid.should == 'http://twitter.com/djcp'
+      @twitter_atom.channel.guid.should == 'tag:search.twitter.com,2005:search/#rails'
     end
   end
 end

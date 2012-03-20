@@ -37,6 +37,9 @@ module FeedAbstractMixins
 
     # An array of author names
     def authors
+      if self.respond_to?(:channel) && self.channel.generator == 'Twitter'
+        return [@source.author.name.content.split(' ')[0]]
+      end
       return [] if @source.authors.empty?
       @source.authors.collect{|au| au.name.content}.reject{|au| au == '' || au.match(/^\s+$/)}
     end
@@ -49,6 +52,9 @@ module FeedAbstractMixins
 
     # The categories list as an array.
     def categories
+      if self.respond_to?(:channel) && self.channel.generator == 'Twitter'
+        return @source.title.content.scan(/#([^#\s]+)/).flatten
+      end
       return [] if @source.categories.empty?
       @source.categories.collect{|c| c.term}.reject{|c| c == '' || c.match(/^\s+$/)}
     end
