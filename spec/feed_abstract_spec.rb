@@ -9,7 +9,7 @@ module FeedAbstract
     end
 
     it "should be able to instantiate" do
-      Feed.respond_to?(:new).should == true
+      FeedAbstract::Feed.respond_to?(:new).should == true
     end
 
     it "should recognize atom feeds properly" do
@@ -33,6 +33,14 @@ module FeedAbstract
     it "should have items" do
       @all_feeds.each do|feed|
         feed.should respond_to :items
+      end
+    end
+
+    it "should throw a parser error on a bad feed" do
+      begin
+      f = FeedAbstract::Feed.new('asdfasdf')
+      rescue Exception => e
+        e.class.should == FeedAbstract::ParserError
       end
     end
 
