@@ -34,6 +34,7 @@ module FeedAbstract
       @chillitem.title.should == "Takedown Complaints in the Android Marketplace"
       @twitteritem.title.should == "djcp: @csoghoian @BrookingsInst and the clipboard as well, presumably. #security #keylogging"
       @twitteratomitem.title.should == "Senior #Ruby on #Rails developer(s) http://t.co/rvqsIK0h #jobs"
+      @feedburner_atom_item.title.should == "Google's Latest CAPTCHA Codes Draws Criticism"
 
     end
 
@@ -55,6 +56,7 @@ module FeedAbstract
 
       @twitteritem.summary.should == "djcp: @csoghoian @BrookingsInst and the clipboard as well, presumably. #security #keylogging"
       @twitteratomitem.summary.should == 'Senior #Ruby on #Rails developer(s) http://t.co/rvqsIK0h #jobs'
+      @feedburner_atom_item.summary.should == 'Here’s a little bit more from the technology front. Google has been accused of another privacy violation. Any tech company that owns a user base numbering in the billions can make a move that draws criticism. Sometimes that criticism is...'
     end
 
     it "should have the correct content" do 
@@ -108,6 +110,8 @@ module FeedAbstract
       @chillitem.content.should == ''
       @twitteritem.content.should == ""
       @twitteratomitem.content.should == %Q|Senior <a href="http://search.twitter.com/search?q=%23Ruby" title="#Ruby" class=" ">#Ruby</a> on <em><a href="http://search.twitter.com/search?q=%23Rails" title="#Rails" class=" ">#Rails</a></em> developer(s) <a href="http://t.co/rvqsIK0h">http://t.co/rvqsIK0h</a> <a href="http://search.twitter.com/search?q=%23jobs" title="#jobs" class=" ">#jobs</a>|
+
+      @feedburner_atom_item.content.should == ''
     end
 
     it "should have the correct link" do
@@ -122,6 +126,7 @@ module FeedAbstract
       @chillitem.link.should == 'https://www.chillingeffects.org/weather.cgi?WeatherID=648'
       @twitteritem.link.should == 'http://twitter.com/djcp/statuses/168381896559046656'
       @twitteratomitem.link.should == 'http://twitter.com/pelaphptutor/statuses/181861618911690752'
+      @feedburner_atom_item.link.should == 'http://feedproxy.google.com/~r/LawLibrarianBlog/~3/CgraB_He5jQ/googles-latest-captcha-codes-draws-criticism.html'
     end
 
     it "should have the correct author" do
@@ -136,6 +141,7 @@ module FeedAbstract
       @chillitem.author.should == ''
       @twitteritem.author.should == 'djcp'
       @twitteratomitem.author.should == 'pelaphptutor'
+      @feedburner_atom_item.author.should == 'Joe Hodnicki'
     end
     
     it "should have the correct authors" do
@@ -150,6 +156,7 @@ module FeedAbstract
       @chillitem.authors.should == []
       @twitteritem.authors.should == ['djcp']
       @twitteratomitem.authors.should == ['pelaphptutor']
+      @feedburner_atom_item.authors.should == ['Joe Hodnicki']
     end
 
     it "should have the correct contributor" do
@@ -164,6 +171,7 @@ module FeedAbstract
       @chillitem.contributor.should == ''
       @twitteritem.contributor.should == ''
       @twitteratomitem.contributor.should == ''
+      @feedburner_atom_item.contributor.should == ''
     end
     
     it "should have the correct contributors" do
@@ -178,6 +186,7 @@ module FeedAbstract
       @chillitem.contributors.should == []
       @twitteritem.contributors.should == []
       @twitteratomitem.contributors.should == []
+      @feedburner_atom_item.contributors.should == []
     end
 
     it "should have the correct category" do
@@ -192,6 +201,7 @@ module FeedAbstract
       @chillitem.category.should == ''
       @twitteritem.category.should == 'security, keylogging'
       @twitteratomitem.category.should == 'Ruby, Rails, jobs'
+      @feedburner_atom_item.category.should == 'Web/Tech'
     end
 
     it "should have the correct categories" do
@@ -206,6 +216,7 @@ module FeedAbstract
       @chillitem.categories.should == []
       @twitteritem.categories.should == ['security', 'keylogging']
       @twitteratomitem.categories.should == ['Ruby', 'Rails', 'jobs']
+      @feedburner_atom_item.categories.should == ['Web/Tech']
     end
 
     it "should have the correct rights" do
@@ -220,6 +231,7 @@ module FeedAbstract
       @chillitem.rights.should == ''
       @twitteritem.rights.should == ''
       @twitteratomitem.rights.should == ''
+      @feedburner_atom_item.rights.should == ''
     end
 
     it "should have been updated at the correct time" do
@@ -234,6 +246,7 @@ module FeedAbstract
       @chillitem.updated.should == ""
       @twitteritem.updated.should == Time.parse('2012-02-11 12:12:27 -0500')
       @twitteratomitem.updated.should == Time.parse('2012-03-19 21:56:03 UTC')
+      @feedburner_atom_item.updated.should == Time.parse('2012-04-16T16:25:05Z')
     end
 
     it "should have been published at the proper time" do
@@ -248,6 +261,7 @@ module FeedAbstract
       @chillitem.published.should == ''
       @twitteritem.published.should == Time.parse('2012-02-11 12:12:27 -0500')
       @twitteratomitem.published.should == Time.parse('2012-03-19 21:56:03 UTC')
+      @feedburner_atom_item.published.should == Time.parse('2012-04-16T16:25:05Z')
     end
 
     it "should have the proper guid" do
@@ -262,6 +276,7 @@ module FeedAbstract
       @chillitem.guid.should == 'https://www.chillingeffects.org/weather.cgi?WeatherID=648'
       @twitteritem.guid.should == 'http://twitter.com/djcp/statuses/168381896559046656'
       @twitteratomitem.guid.should == 'tag:search.twitter.com,2005:181861618911690752'
+      @feedburner_atom_item.guid.should == 'tag:typepad.com,2003:post-6a00d8341bfae553ef016304421f87970d'
     end
 
   end

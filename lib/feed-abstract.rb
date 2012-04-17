@@ -5,7 +5,9 @@ $LOAD_PATH.unshift(File.dirname(__FILE__)) unless $LOAD_PATH.include?(File.dirna
 require 'rss'
 require 'iconv'
 
-require "feed-abstract/version"
+require 'rss_atom_monkeypatches'
+
+require 'feed-abstract/version'
 require 'feed-abstract/mixins'
 
 require 'feed-abstract/channel/atom'

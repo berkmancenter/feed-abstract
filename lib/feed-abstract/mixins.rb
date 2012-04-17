@@ -25,8 +25,8 @@ module FeedAbstractMixins
 
     # A Time object representing when resource was updated.
     def updated
-      return '' if @source.updated.nil?
-      @source.updated.content
+      return '' if @source.updated.nil? && @source.modified.nil?
+      (@source.updated.nil?) ? @source.modified.content : @source.updated.content
     end
 
     # Copyright info.
@@ -55,8 +55,12 @@ module FeedAbstractMixins
       if self.respond_to?(:channel) && self.channel.generator == 'Twitter'
         return @source.title.content.scan(/#([^#\s]+)/).flatten
       end
-      return [] if @source.categories.empty?
-      @source.categories.collect{|c| c.term}.reject{|c| c == '' || c.match(/^\s+$/)}
+      return [] if @source.categories.empty? && @source.dc_subjects.empty?
+      tmp_cats = []
+      tmp_cats << @source.categories.collect{|c| c.term}
+      tmp_cats << @source.dc_subjects.collect{|c| c.content}
+
+      tmp_cats.flatten.reject{|c| c == '' || c.match(/^\s+$/)}
     end
 
     # The categories list as a string joined with a comma.

@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "feed-abstract"
-  s.version = "0.0.11"
+  s.version = "0.0.12"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Daniel Collis-Puro"]
-  s.date = "2012-03-20"
+  s.date = "2012-04-17"
   s.description = "This library creates a common object graph for the RSS/Atom/RDF parsing classes in the ruby standard library. This allows you parse different feed formats and get back the same (or at least a very similar) set of results - item authors are accessible under an \"author(s)\" attribute, categories/tags/subjects are accessible under \"category(ies)\" attributes, etc. We do our best to make sure the data makes sense, too - RSS items lack an \"updated\" attribute, so we use \"pubDate\" to populate it. "
   s.email = ["djcp@cyber.law.harvard.edu"]
   s.extra_rdoc_files = [
@@ -34,10 +34,12 @@ Gem::Specification.new do |s|
     "lib/feed-abstract/items/rss.rb",
     "lib/feed-abstract/mixins.rb",
     "lib/feed-abstract/version.rb",
+    "lib/rss_atom_monkeypatches.rb",
     "spec/feed_abstract_channel_spec.rb",
     "spec/feed_abstract_item_spec.rb",
     "spec/feed_abstract_spec.rb",
     "spec/spec_helper.rb",
+    "spec/test_data/LawLibrarianBlog.atom",
     "spec/test_data/chillingeffects.xml",
     "spec/test_data/djcp.rss",
     "spec/test_data/djcp.rss92",

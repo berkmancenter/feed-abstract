@@ -18,8 +18,9 @@ def instantiate_feeds
   @chill = FeedAbstract::Feed.new(File.open('spec/test_data/chillingeffects.xml'))
   @twitter = FeedAbstract::Feed.new(File.open('spec/test_data/djcp_twitter.rss'))
   @twitter_atom = FeedAbstract::Feed.new(File.open('spec/test_data/twitter_hashtag.atom'))
+  @feedburner_atom = FeedAbstract::Feed.new(File.open('spec/test_data/LawLibrarianBlog.atom'))
   
-  @all_feeds = [@docatom, @kpgatom, @djcprss2, @djcprss92, @oa, @delicious, @zotero, @feedburner, @pyblosxom, @chill, @twitter, @twitter_atom]
+  @all_feeds = [@docatom, @kpgatom, @djcprss2, @djcprss92, @oa, @delicious, @zotero, @feedburner, @pyblosxom, @chill, @twitter, @twitter_atom, @feedburner_atom]
 end
 
 def instantiate_example_items
@@ -34,4 +35,5 @@ def instantiate_example_items
   @chillitem = @chill.items.first
   @twitteritem = @twitter.items.first
   @twitteratomitem = @twitter_atom.items.first
+  @feedburner_atom_item = @feedburner_atom.items.first
 end

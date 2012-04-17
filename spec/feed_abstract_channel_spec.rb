@@ -21,6 +21,7 @@ module FeedAbstract
       it { @chill.channel.should respond_to att}
       it { @twitter.channel.should respond_to att}
       it { @twitter_atom.channel.should respond_to att}
+      it { @feedburner_atom.channel.should respond_to att}
 
       it { @docatom.channel.send(att).should_not == false}
       it { @kpgatom.channel.send(att).should_not == false}
@@ -34,6 +35,7 @@ module FeedAbstract
       it { @chill.channel.send(att).should_not == false}
       it { @twitter.channel.send(att).should_not == false}
       it { @twitter_atom.channel.send(att).should_not == false}
+      it { @feedburner_atom.channel.send(att).should_not == false}
     end
 
     it "should have the correct title" do
@@ -49,6 +51,7 @@ module FeedAbstract
       @chill.channel.title.should == 'Chilling Effects Clearinghouse Weather Reports'
       @twitter.channel.title.should == 'Twitter / djcp'
       @twitter_atom.channel.title.should == '#rails - Twitter Search'
+      @feedburner_atom.channel.title.should == 'Law Librarian Blog'
     end
 
     it "should have the correct subtitle and description" do
@@ -87,6 +90,9 @@ module FeedAbstract
 
       @twitter_atom.channel.description.should == ''
       @twitter_atom.channel.subtitle.should == ''
+
+      @feedburner_atom.channel.description.should == 'A Member of the Law Professor Blogs Network'
+      @feedburner_atom.channel.subtitle.should == 'A Member of the Law Professor Blogs Network'
     end
 
     it "should have the correct link" do
@@ -102,6 +108,7 @@ module FeedAbstract
       @chill.channel.link.should == 'http://www.chillingeffects.org'
       @twitter.channel.link.should == 'http://twitter.com/djcp'
       @twitter_atom.channel.link.should == 'http://search.twitter.com/search?q=%23rails'
+      @feedburner_atom.channel.link.should == 'http://lawprofessors.typepad.com/law_librarian_blog/'
     end
 
     it "should have the correct generator" do
@@ -117,6 +124,7 @@ module FeedAbstract
       @chill.channel.generator.should == ''
       @twitter.channel.generator.should == 'Twitter'
       @twitter_atom.channel.generator.should == 'Twitter'
+      @feedburner_atom.channel.generator.should == 'TypePad'
     end
 
     it "should have the correct language" do
@@ -132,6 +140,7 @@ module FeedAbstract
       @chill.channel.language.should == 'en-us'
       @twitter.channel.language.should == 'en-us'
       @twitter_atom.channel.language.should == 'en-US'
+      @feedburner_atom.channel.language.should == ''
     end
 
     it "should have the correct authors" do
@@ -147,6 +156,7 @@ module FeedAbstract
       @chill.channel.authors.should == ['Wendy Seltzer, wseltzer@chillingeffects.org']
       @twitter.channel.authors.should == []
       @twitter_atom.channel.authors.should == []
+      @feedburner_atom.channel.authors.should == []
 
       @docatom.channel.author.should == 'Doc Searls'
       @kpgatom.channel.author.should == 'Nick Pappas'
@@ -160,6 +170,7 @@ module FeedAbstract
       @chill.channel.author.should == 'Wendy Seltzer, wseltzer@chillingeffects.org'
       @twitter.channel.author.should == ''
       @twitter_atom.channel.author.should == ''
+      @feedburner_atom.channel.author.should == ''
 
     end
 
@@ -176,6 +187,7 @@ module FeedAbstract
       @chill.channel.categories.should == ['Your rights online']
       @twitter.channel.categories.should == []
       @twitter_atom.channel.categories.should == []
+      @feedburner_atom.channel.categories.should == []
       
       @docatom.channel.category.should == ''
       @kpgatom.channel.category.should == 'photos'
@@ -189,6 +201,7 @@ module FeedAbstract
       @chill.channel.category.should == 'Your rights online'
       @twitter.channel.category.should == ''
       @twitter_atom.channel.category.should == ''
+      @feedburner_atom.channel.category.should == ''
     end
 
     it "should have the correct icon" do
@@ -204,6 +217,7 @@ module FeedAbstract
       @chill.channel.icon.should == 'http://images.chillingeffects.org/chilling_effects.gif'
       @twitter.channel.icon.should == ''
       @twitter_atom.channel.icon.should == ''
+      @feedburner_atom.channel.icon.should == ''
     end
 
     it "should have the correct logo" do
@@ -219,6 +233,7 @@ module FeedAbstract
       @chill.channel.logo.should == 'http://images.chillingeffects.org/chilling_effects.gif'
       @twitter.channel.logo.should == ''
       @twitter_atom.channel.logo.should == ''
+      @feedburner_atom.channel.logo.should == ''
     end
 
     it "should have the correct rights" do
@@ -234,6 +249,7 @@ module FeedAbstract
       @chill.channel.rights.should == ''
       @twitter.channel.rights.should == ''
       @twitter_atom.channel.rights.should == ''
+      @feedburner_atom.channel.rights.should == ''
     end
 
     it "should have the correct updated value" do
@@ -249,6 +265,7 @@ module FeedAbstract
       @chill.channel.updated.should == Time.parse('2002-02-25T12:00+00:00')
       @twitter.channel.updated.should == ''
       @twitter_atom.channel.updated.should == Time.parse('2012-03-19 21:56:03 UTC')
+      @feedburner_atom.channel.updated.should == Time.parse('2012-04-16 16:25:05 UTC')
     end
 
     it "should have the correct guid" do
@@ -264,6 +281,7 @@ module FeedAbstract
       @chill.channel.guid.should == 'http://www.chillingeffects.org'
       @twitter.channel.guid.should == 'http://twitter.com/djcp'
       @twitter_atom.channel.guid.should == 'tag:search.twitter.com,2005:search/#rails'
+      @feedburner_atom.channel.guid.should == 'tag:typepad.com,2003:weblog-93063'
     end
   end
 end

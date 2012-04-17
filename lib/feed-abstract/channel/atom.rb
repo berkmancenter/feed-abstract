@@ -21,8 +21,8 @@ module FeedAbstract
       end
 
       def description
-        return '' if @feed.subtitle.nil?
-        @feed.subtitle.content
+        return '' if @feed.subtitle.nil? && @feed.tagline.nil?
+        (@feed.subtitle.nil?) ? @feed.tagline.content : @feed.subtitle.content
       end
       alias :subtitle :description
 

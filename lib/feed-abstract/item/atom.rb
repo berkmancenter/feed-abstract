@@ -43,8 +43,8 @@ module FeedAbstract
 
       # A Time object
       def published
-        return '' if @item.published.nil?
-        @item.published.content
+        return '' if @item.published.nil? && @item.created.nil?
+        (@item.published.nil?) ? @item.created.content : @item.published.content
       end
 
     end
