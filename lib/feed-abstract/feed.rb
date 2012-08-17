@@ -70,16 +70,17 @@ module FeedAbstract
       input = (xml.respond_to?(:read)) ? xml.read : xml
 
       if options[:force_encoding]
-        ic = Iconv.new(options[:output_encoding].upcase + ((options[:transliterate_characters]) ? '//TRANSLIT' : '') + '//IGNORE',options[:input_encoding].upcase)
         if input.respond_to?(:encoding)
           # ruby 1.9
           # Only transcode if the encoding isn't valid.
           # See: http://po-ru.com/diary/fixing-invalid-utf-8-in-ruby-revisited/ for why we're appending the extra space.
           unless (input.encoding.to_s.upcase == options[:output_encoding].upcase && input.valid_encoding?)
-            input = ic.iconv(input << ' ')[0..-2]
+            input.encode!(options[:output_encoding], options[:input_encoding])
           end
         else
           # ruby 1.8
+          require 'iconv'
+          ic = Iconv.new(options[:output_encoding].upcase + ((options[:transliterate_characters]) ? '//TRANSLIT' : '') + '//IGNORE',options[:input_encoding].upcase)
           input = ic.iconv(input << ' ')[0..-2]
         end
       end

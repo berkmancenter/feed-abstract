@@ -3,7 +3,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__)) unless $LOAD_PATH.include?(File.dirname(__FILE__))
 
 require 'rss'
-require 'iconv'
+#require 'iconv'
 
 require 'rss_atom_monkeypatches'
 
