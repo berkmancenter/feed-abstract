@@ -29,7 +29,7 @@ end
 
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
