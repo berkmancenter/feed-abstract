@@ -1,5 +1,5 @@
 # encoding: UTF-8
 
 module FeedAbstract
-  VERSION = "0.0.13"
+  VERSION = "0.0.14"
 end

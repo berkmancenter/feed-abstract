@@ -28,9 +28,9 @@ module FeedAbstract
       def generator
         if ! @feed.channel.generator.nil? && @feed.channel.generator.match(/wordpress\.org/i)
           return 'WordPress'
-        elsif @feed.channel.link.match(/www\.delicious\.com/i)
+        elsif ! @feed.channel.link.nil? && @feed.channel.link.match(/www\.delicious\.com/i)
           return 'Delicious'
-        elsif @feed.channel.link.match(/https?:\/\/.*\.?twitter\.com/i)
+        elsif ! @feed.channel.link.nil? && @feed.channel.link.match(/https?:\/\/.*\.?twitter\.com/i)
           return 'Twitter'
         end
         return '' if @feed.channel.generator.nil?
