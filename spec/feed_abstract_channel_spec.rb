@@ -244,7 +244,7 @@ module FeedAbstract
       @oa.channel.rights.should == 'Connotea 2011'
       @delicious.channel.rights.should == ''
       @zotero.channel.rights.should == ''
-      @feedburner.channel.rights.should == '© 2011 Cable News Network LP, LLLP.'
+      @feedburner.channel.rights.should == ' 2011 Cable News Network LP, LLLP.'
       @pyblosxom.channel.rights.should == 'Creative Commons Attribution-ShareAlike'
       @chill.channel.rights.should == ''
       @twitter.channel.rights.should == ''
