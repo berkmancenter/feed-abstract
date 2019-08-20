@@ -28,6 +28,7 @@ module FeedAbstract
 
       # A string representing the application that created this feed.
       def generator
+        return '' if self.link.nil?
         if self.link.match(/zotero\.org/)
           return 'Zotero'
         elsif self.link.match(/wordpress\.com/)
